@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "RobotoCondensed";
+  font-weight: $normal;
+  src: url("../fonts/roboto-condensed-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  font-weight: $bold;
+  src: url("../fonts/roboto-condensed-700.woff2") format("woff2"), url("../fonts/roboto-condensed-700.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PTMono";
+  font-weight: $normal;
+  src: url("../fonts/pt-mono.woff2") format("woff2"), url("../fonts/pt-mono.woff") format("woff");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

@@ -1,0 +1,43 @@
+.page-header {
+  padding-top: 33px;
+  padding-bottom: 92px;
+
+  color: $background-color;
+  background-color: $main-color;
+  background-image: url("../img/header-bg-desktop@1x.png"), url("../img/header-triangles-desktop@1x.png");
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.page-header__navigation {
+  display: flex;
+
+  margin: 0 auto;
+}
+
+.page-header-logo__wrapper {
+  width: 202px;
+  height: 52px;
+}
+
+.page-header__contacts {
+  @include reset-list;
+
+  display: flex;
+}
+
+.page-header__contacts-link {
+  font-family: PTMono;
+  font-size: 16px;
+  font-weight: $normal;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
