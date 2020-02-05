@@ -1,0 +1,38 @@
+.services {
+  padding-top: 90px;
+  padding-bottom: 125px;
+
+  color: $background-color;
+  background-color: $main-color;
+}
+
+.services__description {
+  font-family: $header-font-family;
+  font-weight: $normal;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.services-list {
+  @include reset-list;
+
+  display: flex;
+}
+
+.services-item {
+  display: flex;
+}
+
+.services-item__link {
+  width: 370px;
+  min-height: 620px;
+}
+
+.services-item__title {
+  font-family: $header-font-family;
+  font-weight: $normal;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: $background-color;
+}
