@@ -27,6 +27,8 @@
   border: 2px solid $border-color;
   border-left: 4px solid $accent-color;
 
+  cursor: pointer;
+
   &:hover {
     color: $background-color;
     background-color: $accent-color;
