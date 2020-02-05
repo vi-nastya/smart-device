@@ -1,0 +1,83 @@
+.page-footer {
+  padding-top: 65px;
+}
+
+.page-footer__section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__social-list {
+  @include reset-list;
+  display: flex;
+}
+
+.page-footer__social-link {
+  cursor: pointer;
+}
+
+.page-footer__section-title {
+  font-family: $header-font-family;
+  font-weight: $normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $main-color
+}
+
+.page-footer__nav-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.page-footer__nav-link {
+  font-family: $main-font-family;
+  font-weight: $normal;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: $main-color;
+  opacity: 0.5;
+
+  cursor: pointer;
+
+  &:hover, &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__contact-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__contact-item {
+  font-family: $main-font-family;
+  font-weight: $normal;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: $main-color;
+  opacity: 0.5;
+}
+
+/* TODO: использовать - это серые буквы большие */
+.page-footer__accent-text {
+  font-family: $main-font-family;
+  font-weight: $normal;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: $main-color;
+  opacity: 0.5;
+}

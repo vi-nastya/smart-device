@@ -71,35 +71,97 @@
       <p class="services__description">Service Device предлагает следующие товары и услуги</p>
       <ul class="services-list">
         <li class="services-item">
-          <a class="services-item__link">
+          <a class="services-item__link services-item__link--production">
             <h3 class="services-item__title">Производство печатных плат</h3>
           </a>
         </li>
         <li class="services-item">
-          <a class="services-item__link">
+          <a class="services-item__link services-item__link--install">
             <h3 class="services-item__title">Монтаж печатных плат</h3>
           </a>
         </li>
         <li class="services-item">
-          <a class="services-item__link">
+          <a class="services-item__link services-item__link--light">
             <h3 class="services-item__title">Комплектующие для светотехники</h3>
           </a>
         </li>
       </ul>
     </section>
     <section class="contact" id="contact">
-      <p>Остались вопросы? Задайте их нам!</p>
-      <p>Мы проконсультируем Вас бесплатно</p>
-      <form>
-        <input>
-        <input>
-        <textarea></textarea>
-        <checkbox></checkbox>
-        <label>Я согласен на обработку персональных данных</label>
-        <button type="submit">Задать вопрос</button>
-      </form>
+      <div class="contact-inner">
+        <h2 class="visually-hidden">Запись на бесплатную консультацию</h2>
+        <p class="contact__description">Остались вопросы? Задайте их нам!</p>
+        <p class="contact__details">Мы проконсультируем Вас бесплатно</p>
+        <form class="contact-form">
+          <input class="contact-form__input" placeholder="Имя">
+          <input class="contact-form__input" placeholder="Телефон">
+          <textarea class="contact-form__input contact-form__input--textarea" rows="5">Ваш вопрос</textarea>
+          <checkbox></checkbox>
+          <label class="contact-form__label">Я согласен на обработку персональных данных</label>
+          <button class="contact-form__button" type="submit">Задать вопрос</button>
+        </form>
+      </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="page-footer">
+    <div class="page-footer__section">
+      <a class="page-footer__logo">
+        <div class="page-footer__logo-wrapper">
+          <img src="img/logo-dark.svg" alt="Smart Device">
+        </div>
+      </a>
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link">FB</a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link">OK</a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link">VK</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__section">
+      <h3 class="page-footer__section-title">Разделы сайта</h3>
+      <ul class="page-footer__nav-list">
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link">О компании</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link">Продукты</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link">Производство печатных плат</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link">Монтаж печатных плат</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link">Комплектующие</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link">Доставка</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link">Контакты</a>
+        </li>
+      </ul>
+
+      <h3 class="page-footer__section-title">Наш офис</h3>
+      <ul class="page-footer__contact-list">
+        <li class="page-footer__contact-item">г. Мытищи, Олимпийский проспект, д.10</li>
+        <li class="page-footer__contact-item">+7 (495) 589-40-50</li>
+        <li class="page-footer__contact-item">+7 (925) 003-87-67</li>
+        <li class="page-footer__contact-item">+7 (926) 926-080-79</li>
+      </ul>
+    </div>
+    <div class="page-footer__section">
+      <span class="page-footer__accent-text">Все права защищены</span>
+      <span class="page-footer__accent-text">1999-2018 SD Service Devices</span class="page-footer__accent-text">
+      <a class="page-footer__accent-text">Условия конфиденциальности</a class="page-footer__accent-text">
+      <span class="page-footer__accent-text">Developed by wow studio</span class="page-footer__accent-text">
+    </div>
+  </footer>
 </body>
 </html>

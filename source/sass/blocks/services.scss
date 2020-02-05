@@ -17,6 +17,7 @@
   @include reset-list;
 
   display: flex;
+  justify-content: space-between;
 }
 
 .services-item {
@@ -26,6 +27,20 @@
 .services-item__link {
   width: 370px;
   min-height: 620px;
+
+  background-repeat: no-repeat;
+
+  &--production {
+    background-image: url("../img/service-production-desktop@1x.jpg");
+  }
+
+  &--install {
+    background-image: url("../img/service-install-desktop@1x.jpg");
+  }
+
+  &--light {
+    background-image: url("../img/service-light-desktop@1x.jpg");
+  }
 }
 
 .services-item__title {
