@@ -8,18 +8,34 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header>
-    <div class="header-logo__wrapper"></div>
-    <ul class="header-contacts"></ul>
+  <header class="page-header">
+    <div class="page-header__navigation">
+      <div class="page-header-logo__wrapper">
+        <img src="img/logo-light.svg" class="page-header__logo" alt="Smart Device">
+      </div>
+      <ul class="page-header__contacts">
+        <li class="page-header__contacts-item">
+          <a class="page-header__contacts-link page-header__contacts-link--email">info@sd.ru</a>
+        </li>
+        <li class="page-header__contacts-item">
+          <a class="page-header__contacts-link page-header__contacts-link--phone">+7 (495) 000 52 52</a>
+        </li>
+      </ul>
+
+      <a class="page-header__call-me">Заказать звонок</a>
+    </div>
+
+    <section class="page-header__intro intro">
+      <div class="intro__inner">
+        <h2 class="intro__header">Печатные платы</h2>
+        <p class="intro__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a href="#contact" class="intro__button">Получить бесплатную консультацию</a>
+        <a href="#features" class="intro__features-link">Скролл вниз</a>
+      </div>
+    </section>
   </header>
   <main>
     <h1 class="visually-hidden">Smart Device</h1>
-    <section class="promo">
-      <h2 class="promo__header">Печатные платы</h2>
-      <p class="promo__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a href="#contact" class="promo__button">Получить бесплатную консультацию</a>
-      <a href="#features">Скролл вниз</a>
-    </section>
     <div class="info">
       <section class="info__features features" id="features">
         <ul class="features-list">
