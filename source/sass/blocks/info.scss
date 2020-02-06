@@ -1,0 +1,5 @@
+.info {
+  @include container;
+
+  background-color: $background-color;
+}

@@ -2,6 +2,10 @@
   padding-top: 65px;
 }
 
+.page-footer-inner {
+  @include wide-container;
+}
+
 .page-footer__top {
   display: flex;
   flex-direction: row;

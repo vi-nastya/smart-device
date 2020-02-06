@@ -4,6 +4,7 @@
 
 .features-list {
   @include reset-list;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -14,12 +15,12 @@
   display: flex;
   flex-direction: column;
 
-  width: 570px;
+  max-width: 570px;
   min-height: 300px;
   margin-bottom: 15px;
 
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -35,6 +36,22 @@
   }
 }
 
+@media (max-width: $tablet-max) {
+  .features-item {
+  width: calc((100% - 30px)/2);
+  padding-left: 20px;
+  padding-right: 15px;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .features-item {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 10px;
+  }
+}
 
 .features-item__title {
   font-family: $header-font-family;

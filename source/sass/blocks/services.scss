@@ -6,6 +6,10 @@
   background-color: $main-color;
 }
 
+.services-inner {
+  @include container;
+}
+
 .services__description {
   font-family: $header-font-family;
   font-weight: $normal;

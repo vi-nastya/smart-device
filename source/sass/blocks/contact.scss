@@ -15,6 +15,10 @@
 }
 
 .contact-inner {
+  @include container;
+}
+
+.contact_content-wrapper {
   max-width: 750px;
   margin-left: auto;
 

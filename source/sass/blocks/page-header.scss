@@ -9,11 +9,20 @@
   background-repeat: no-repeat, no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/header-bg--desktop@2x.png");
+    background-image: url("../img/header-bg-desktop@2x.png"), url("../img/header-triangles-desktop@2x.png");;
+  }
+
+  @media (max-width: $tablet-max) {
+    background-image: url("../img/header-bg-tablet@1x.png"), url("../img/header-triangles-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/header-bg-tablet@2x.png"), url("../img/header-triangles-tablet@2x.png");
+    }
   }
 }
 
 .page-header__navigation {
+  @include wide-container;
   display: flex;
   justify-content: space-between;
   align-items: center;
