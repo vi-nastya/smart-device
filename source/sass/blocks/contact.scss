@@ -107,6 +107,9 @@
 }
 
 .contact-form__label {
+  position: relative;
+  padding-left: 30px;
+
   font-family: $main-font-family;
   font-weight: normal;
   font-size: 14px;
@@ -114,4 +117,25 @@
 
   color: $background-color;
   opacity: 0.8;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid $background-color;
+    top: 0;
+    left: 0;
+  }
+}
+
+input[type="checkbox"]:checked + .contact-form__label::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 4px;
+  width: 8px;
+  height: 5px;
+  background-image: url("../img/icon-checkmark.svg");
+  background-repeat: no-repeat;
 }
