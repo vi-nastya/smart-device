@@ -1,5 +1,5 @@
 .features {
-  padding-top: 50px;
+  padding-top: 112px;
 }
 
 .features-list {
@@ -17,12 +17,12 @@
 
   width: calc((100% - 30px) / 2);
   max-width: 570px;
-  min-height: 300px;
-  margin-bottom: 15px;
+  min-height: 299px;
+  margin-bottom: 30px;
 
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 40px;
+  padding-top: 93px;
   padding-bottom: 40px;
 
   color: $accent-color;
@@ -55,6 +55,8 @@
 }
 
 .features-item__title {
+  margin: 0;
+  margin-bottom: 15px;
   font-family: $header-font-family;
   font-weight: $normal;
   font-size: 24px;
@@ -67,6 +69,7 @@
 }
 
 .features-item__description {
+  margin: 0;
   font-family: $main-font-family;
   font-weight: $normal;
   font-size: 16px;
