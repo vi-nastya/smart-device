@@ -1,13 +1,13 @@
 .contact {
-  padding-top: 90px;
-  padding-bottom: 120px;
+  padding-top: 92px;
+  padding-bottom: 113px;
 
   color: $background-color;
   background-color: $accent-color;
 
   background-image: url("../img/airplane-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 343px 160px;
   background-size: 511px 288px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -47,7 +47,7 @@
 
 .contact__description {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   font-family: $header-font-family;
   font-weight: $normal;
   font-size: 36px;
@@ -65,7 +65,7 @@
 
 .contact__details {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 51px;
   font-family: $main-font-family;
   font-style: normal;
   font-weight: $normal;
@@ -104,7 +104,9 @@
 
   &--textarea {
     width: 100%;
+    min-height: 154px;
     padding-top: 15px;
+    resize: none;
   }
 
   &:focus {
@@ -122,8 +124,8 @@
   width: 270px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 
   font-family: $header-font-family;
   font-weight: $bold;
@@ -163,7 +165,8 @@
 
 .contact-form__label {
   position: relative;
-  padding-left: 30px;
+  padding-left: 40px;
+  padding-top: 11px;
 
   width: calc(100% - 270px - 30px);
 
@@ -183,8 +186,8 @@
     width: 16px;
     height: 16px;
     border: 1px solid $background-color;
-    top: 0;
-    left: 0;
+    top: 13px;
+    left: 8px;
   }
 
   @media (max-width: $mobile-max) {
@@ -204,8 +207,8 @@
 input[type="checkbox"]:checked + .contact-form__label::after {
   position: absolute;
   content: "";
-  top: 5px;
-  left: 4px;
+  top: 17px;
+  left: 12px;
   width: 8px;
   height: 5px;
   background-image: url("../img/icon-checkmark.svg");
