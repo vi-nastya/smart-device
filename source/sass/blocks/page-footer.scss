@@ -2,8 +2,17 @@
   padding-top: 65px;
 }
 
-.page-footer__section {
+.page-footer__top {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-bottom: 60px;
+}
+
+.page-footer__links {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -16,7 +25,13 @@
   cursor: pointer;
 }
 
-.page-footer__section-title {
+.page-footer__menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 60%;
+}
+
+.page-footer__nav-title, .page-footer__contacts-title {
   font-family: $header-font-family;
   font-weight: $normal;
   font-size: 15px;
@@ -25,6 +40,10 @@
   text-transform: uppercase;
 
   color: $main-color
+}
+
+.page-footer__nav-columns {
+  display: flex;
 }
 
 .page-footer__nav-list {
@@ -54,13 +73,13 @@
   }
 }
 
-.page-footer__contact-list {
+.page-footer__contacts-list {
   @include reset-list;
   display: flex;
   flex-direction: column;
 }
 
-.page-footer__contact-item {
+.page-footer__contacts-item {
   font-family: $main-font-family;
   font-weight: $normal;
   font-size: 15px;
@@ -70,8 +89,15 @@
   opacity: 0.5;
 }
 
-/* TODO: использовать - это серые буквы большие */
-.page-footer__accent-text {
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__copyright-text,
+.page-footer__copyright-years,
+.page-footer__copyright-docs,
+.page-footer__copyright-developer  {
   font-family: $main-font-family;
   font-weight: $normal;
   font-size: 13px;
@@ -80,4 +106,17 @@
 
   color: $main-color;
   opacity: 0.5;
+}
+
+.page-footer__copyright-docs,
+.page-footer__copyright-developer {
+  cursor: pointer;
+
+  &:hover, &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
