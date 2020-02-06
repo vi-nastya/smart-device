@@ -14,6 +14,7 @@
   }
 
   @media (max-width: $tablet-max) {
+    padding-top: 20px;
     background-image: url("../img/header-bg-tablet@1x.png"), url("../img/header-triangles-tablet@1x.png"), url("../img/intro-tablet@1x.png");
     background-size: cover, cover, 265px 340px;
 
@@ -42,6 +43,8 @@
   padding-bottom: 20px;
 
   @media (max-width: $tablet-max) {
+    padding-left: 25px;
+    padding-right: 15px;
     align-items: flex-start;
   }
 }
@@ -59,13 +62,17 @@
   justify-content: space-between;
 
   @media (max-width: $tablet-max) {
-    width: 70px;
+    margin-right: 0;
   }
 }
 
 .page-header__contacts-item {
   &:nth-of-type(1) {
     margin-right: 87px;
+
+    @media (max-width: $tablet-max) {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -108,6 +115,12 @@
       height: 14px;
       top: 0;
       left: -3px;
+
+      @media (max-width: $tablet-max) {
+        width: 25px;
+        height: 22px;
+        background-size: 25px 22px;
+      }
     }
   }
 
@@ -119,6 +132,12 @@
       height: 18px;
       top: -2px;
       left: 0;
+
+      @media (max-width: $tablet-max) {
+        width: 22px;
+        height: 22px;
+        background-size: 22px 22px;
+      }
     }
   }
 }
