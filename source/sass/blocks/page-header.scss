@@ -29,6 +29,10 @@
 
   margin: 0 auto;
   margin-bottom: 100px;
+
+  @media (max-width: $tablet-max) {
+    align-items: flex-start;
+  }
 }
 
 .page-header-logo__wrapper {
@@ -42,6 +46,10 @@
   width: 30%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $tablet-max) {
+    width: 70px;
+  }
 }
 
 .page-header__contacts-link {
@@ -55,6 +63,10 @@
   color: $background-color;
 
   cursor: pointer;
+
+  @media (max-width: $tablet-max) {
+    font-size: 0;
+  }
 
   &:hover, &:focus {
     opacity: 0.6;
@@ -119,5 +131,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (max-width: $tablet-max) {
+    display: none;
   }
 }

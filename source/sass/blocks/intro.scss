@@ -23,6 +23,16 @@
   text-transform: uppercase;
 
   color: $background-color;
+
+  @media (max-width: $tablet-max) {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 40px;
+    line-height: 47px;
+  }
 }
 
 .intro__description {
@@ -34,6 +44,16 @@
   font-size: 22px;
   line-height: 34px;
   color: $background-color;
+
+  @media (max-width: $tablet-max) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 .intro__button {
@@ -59,6 +79,11 @@
 
   cursor: pointer;
   overflow: hidden;
+
+  @media (max-width: $mobile-max) {
+    margin-left: 0;
+    width: 100%;
+  }
 
   &:hover, &:focus {
     opacity: 0.6;
@@ -91,5 +116,9 @@
 
   &:active {
     opacity: 0.1;
+  }
+
+  @media (max-width: $tablet-max) {
+    display: none;
   }
 }
