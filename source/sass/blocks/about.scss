@@ -5,12 +5,16 @@
   flex-direction: column;
   align-items: flex-start;
 
-  background-image: url("../img/year@1x.png");
+  background-image: url("../img/year-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: left;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/year@2x.png");
+    background-image: url("../img/year-desktop@2x.png");
+  }
+
+  @media (max-width: $tablet-max) {
+    background-image: url("../img/year@1x.png");
   }
 }
 
