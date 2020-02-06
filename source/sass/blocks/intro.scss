@@ -6,6 +6,11 @@
   padding-bottom: 183px;
 
   position: relative;
+
+  @media (max-width: $tablet-max) {
+    padding-top: 93px;
+    padding-bottom: 71px;
+  }
 }
 
 .intro__header {
@@ -21,6 +26,11 @@
   color: $background-color;
 
   @media (max-width: $tablet-max) {
+    margin-left: 68px;
+    width: 150px;
+
+    margin-bottom: 28px;
+
     font-size: 60px;
     line-height: 70px;
   }
@@ -43,6 +53,9 @@
   color: $background-color;
 
   @media (max-width: $tablet-max) {
+    margin-left: 120px;
+    width: 350px;
+
     font-size: 18px;
     line-height: 28px;
   }
@@ -76,6 +89,12 @@
 
   cursor: pointer;
   overflow: hidden;
+
+  @media (max-width: $tablet-max) {
+    margin-top: 55px;
+    margin-left: 119px;
+    max-width: 379px;
+  }
 
   @media (max-width: $mobile-max) {
     margin-left: 0;

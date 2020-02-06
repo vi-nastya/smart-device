@@ -16,7 +16,8 @@
   @media (max-width: $tablet-max) {
     padding-top: 20px;
     background-image: url("../img/header-bg-tablet@1x.png"), url("../img/header-triangles-tablet@1x.png"), url("../img/intro-tablet@1x.png");
-    background-size: cover, cover, 265px 340px;
+    background-size: cover, 770px 566px, 265px 340px;
+    background-position: 0 0, 0 -2px, 509px 114px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/header-bg-tablet@2x.png"), url("../img/header-triangles-tablet@2x.png"), url("../img/intro-tablet@2x.png");
