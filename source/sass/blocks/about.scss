@@ -1,14 +1,14 @@
 .about {
   padding-left: 180px;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 76px;
+  padding-bottom: 108px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
   background-image: url("../img/year-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: -30px 80px;
   background-size: 220px 317px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -34,7 +34,7 @@
 
 .about__header {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-family: $header-font-family;
   font-weight: $normal;
   font-size: 36px;
@@ -62,9 +62,10 @@
 }
 
 .about__button {
-  margin-top: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  min-width: 178px;
+  margin-top: 19px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   padding-left: 25px;
   padding-right: 25px;
 
