@@ -35,6 +35,7 @@
 
   @media (max-width: $tablet-max) {
     width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -58,49 +59,49 @@
   }
 
   &--production {
-    background-image: url("../img/service-production-desktop@1x.jpg");
+    background-image: url("../img/service/service-production-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/service-production-desktop@2x.png");
+      background-image: url("../img/service/service-production-desktop@2x.png");
     }
 
     @media (max-width: $tablet-max) {
-      background-image: url("../img/service-production-tablet@1x.jpg");
+      background-image: url("../img/service/service-production-tablet@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/service-production-tablet@2x.png");
+        background-image: url("../img/service/service-production-tablet@2x.png");
       }
     }
   }
 
   &--install {
-    background-image: url("../img/service-install-desktop@1x.jpg");
+    background-image: url("../img/service/service-install-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/service-install-desktop@2x.png");
+      background-image: url("../img/service/service-install-desktop@2x.png");
     }
 
     @media (max-width: $tablet-max) {
-      background-image: url("../img/service-install-tablet@1x.jpg");
+      background-image: url("../img/service/service-install-tablet@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/service-install-tablet@2x.png");
+        background-image: url("../img/service/service-install-tablet@2x.png");
       }
     }
   }
 
   &--light {
-    background-image: url("../img/service-light-desktop@1x.jpg");
+    background-image: url("../img/service/service-light-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/service-light-desktop@2x.png");
+      background-image: url("../img/service/service-light-desktop@2x.png");
     }
 
     @media (max-width: $tablet-max) {
-      background-image: url("../img/service-light-tablet@1x.jpg");
+      background-image: url("../img/service/service-light-tablet@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/service-light-tablet@2x.png");
+        background-image: url("../img/service/service-light-tablet@2x.png");
       }
     }
   }
