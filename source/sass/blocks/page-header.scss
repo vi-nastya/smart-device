@@ -4,19 +4,30 @@
 
   color: $background-color;
   background-color: $main-color;
-  background-image: url("../img/header-bg-desktop@1x.png"), url("../img/header-triangles-desktop@1x.png");
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url("../img/header-bg-desktop@1x.png"), url("../img/header-triangles-desktop@1x.png"), url("../img/intro-desktop@1x.png");
+  background-size: cover, cover, 705px 515px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 0 0, right, right;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/header-bg-desktop@2x.png"), url("../img/header-triangles-desktop@2x.png");;
+    background-image: url("../img/header-bg-desktop@2x.png"), url("../img/header-triangles-desktop@2x.png"), url("../img/intro-desktop@2x.png");
   }
 
   @media (max-width: $tablet-max) {
-    background-image: url("../img/header-bg-tablet@1x.png"), url("../img/header-triangles-tablet@1x.png");
+    background-image: url("../img/header-bg-tablet@1x.png"), url("../img/header-triangles-tablet@1x.png"), url("../img/intro-tablet@1x.png");
+    background-size: cover, cover, 265px 340px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/header-bg-tablet@2x.png"), url("../img/header-triangles-tablet@2x.png");
+      background-image: url("../img/header-bg-tablet@2x.png"), url("../img/header-triangles-tablet@2x.png"), url("../img/intro-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    background-image: url("../img/header-bg-mobile@1x.png"), url("../img/header-triangles-mobile@1x.png"), url("../img/intro-mobile@1x.png");
+    background-size: cover, cover, 301px 220px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/header-bg-mobile@2x.png"), url("../img/header-triangles-mobile@2x.png"), url("../img/intro-mobile@2x.png");
     }
   }
 }
@@ -68,7 +79,8 @@
     font-size: 0;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
@@ -83,7 +95,7 @@
   }
 
   &--email {
-    &::before{
+    &::before {
       background-image: url("../img/icon-mail.svg");
       background-size: 19px 14px;
       width: 19px;
@@ -93,14 +105,14 @@
     }
   }
 
-  &--phone{
+  &--phone {
     &::before {
       background-image: url("../img/icon-phone.svg");
       background-size: 18px 18px;
       width: 18px;
       height: 18px;
       top: 1px;
-      left: 0px;
+      left: 0;
     }
   }
 }
@@ -125,7 +137,8 @@
   border: 2px solid $background-color;
   border-radius: 5px;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 

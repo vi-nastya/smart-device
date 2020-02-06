@@ -31,7 +31,7 @@
 .services-item {
   display: flex;
   max-width: 370px;
-  width: calc((100% - 60px)/3);
+  width: calc((100% - 60px) / 3);
 
   @media (max-width: $tablet-max) {
     width: 100%;

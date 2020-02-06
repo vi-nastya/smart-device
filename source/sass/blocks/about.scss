@@ -82,7 +82,8 @@
 
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 

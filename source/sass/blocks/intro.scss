@@ -3,15 +3,6 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 90px;
-
-  background-image: url("../img/intro-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-size: 705px 515px;
-  background-position: right;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/intro-desktop@2x.png");
-  }
 }
 
 .intro__header {
@@ -85,7 +76,8 @@
     width: 100%;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
@@ -110,7 +102,8 @@
 
   transform: rotate(-90deg);
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.9;
   }
 

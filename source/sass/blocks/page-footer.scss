@@ -59,7 +59,8 @@
   }
 }
 
-.page-footer__nav-title, .page-footer__contacts-title {
+.page-footer__nav-title,
+.page-footer__contacts-title {
   margin: 0;
   margin-bottom: 28px;
   font-family: $header-font-family;
@@ -102,7 +103,8 @@
 
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 
@@ -141,7 +143,7 @@
 .page-footer__copyright-years,
 .page-footer__copyright-docs,
 .page-footer__copyright-developer,
-.page-footer__top-years  {
+.page-footer__top-years {
   margin: 0;
   font-family: $main-font-family;
   font-weight: $normal;
@@ -157,7 +159,8 @@
 .page-footer__copyright-developer {
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 
