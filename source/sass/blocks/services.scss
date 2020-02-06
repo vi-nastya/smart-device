@@ -4,6 +4,11 @@
 
   color: $background-color;
   background-color: $main-color;
+
+  @media (max-width: $tablet-max) {
+    padding-top: 50px;
+    padding-bottom: 33px;
+  }
 }
 
 .services-inner {
@@ -17,6 +22,11 @@
   font-weight: $normal;
   font-size: 36px;
   line-height: 51px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 32px;
+    line-height: 45px;
+  }
 }
 
 .services-list {
