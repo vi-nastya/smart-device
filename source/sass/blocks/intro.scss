@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-size: 705px 515px;
   background-position: right;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/intro-desktop@2x.png");
+  }
 }
 
 .intro__header {

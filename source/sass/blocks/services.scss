@@ -32,14 +32,26 @@
 
   &--production {
     background-image: url("../img/service-production-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service-production-desktop@2x.png");
+    }
   }
 
   &--install {
     background-image: url("../img/service-install-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service-install-desktop@2x.png");
+    }
   }
 
   &--light {
     background-image: url("../img/service-light-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service-light-desktop@2x.png");
+    }
   }
 }
 

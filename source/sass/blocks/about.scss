@@ -8,6 +8,10 @@
   background-image: url("../img/year@1x.png");
   background-repeat: no-repeat;
   background-position: left;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/year@2x.png");
+  }
 }
 
 .about__header {

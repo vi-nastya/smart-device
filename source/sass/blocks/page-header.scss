@@ -7,6 +7,10 @@
   background-image: url("../img/header-bg-desktop@1x.png"), url("../img/header-triangles-desktop@1x.png");
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/header-bg--desktop@2x.png");
+  }
 }
 
 .page-header__navigation {

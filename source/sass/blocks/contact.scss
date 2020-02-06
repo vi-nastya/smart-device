@@ -8,6 +8,10 @@
   background-image: url("../img/airplane-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center left;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/airplane-desktop@2x.png");
+  }
 }
 
 .contact-inner {
