@@ -2,10 +2,13 @@
   @include wide-container;
   display: flex;
   flex-direction: column;
+  padding-top: 182px;
   padding-bottom: 90px;
 }
 
 .intro__header {
+  margin: 0;
+  margin-bottom: 15px;
   font-family: $header-font-family;
   font-size: 80px;
   font-weight: $bold;
@@ -27,6 +30,7 @@
 }
 
 .intro__description {
+  margin: 0;
   margin-left: 70px;
   max-width: 610px;
 

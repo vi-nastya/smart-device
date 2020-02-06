@@ -1,5 +1,5 @@
 .page-header {
-  padding-top: 33px;
+  padding-top: 34px;
   padding-bottom: 92px;
 
   color: $background-color;
@@ -39,7 +39,7 @@
   align-items: center;
 
   margin: 0 auto;
-  margin-bottom: 100px;
+  padding-bottom: 20px;
 
   @media (max-width: $tablet-max) {
     align-items: flex-start;
@@ -53,8 +53,8 @@
 
 .page-header__contacts {
   @include reset-list;
-
-  width: 30%;
+  margin-left: auto;
+  margin-right: 49px;
   display: flex;
   justify-content: space-between;
 
@@ -63,9 +63,15 @@
   }
 }
 
+.page-header__contacts-item {
+  &:nth-of-type(1) {
+    margin-right: 87px;
+  }
+}
+
 .page-header__contacts-link {
   position: relative;
-  padding-left: 30px;
+  padding-left: 35px;
 
   font-family: $main-font-family;
   font-size: 16px;
@@ -100,7 +106,7 @@
       background-size: 19px 14px;
       width: 19px;
       height: 14px;
-      top: 3px;
+      top: 0;
       left: -3px;
     }
   }
@@ -111,17 +117,17 @@
       background-size: 18px 18px;
       width: 18px;
       height: 18px;
-      top: 1px;
+      top: -2px;
       left: 0;
     }
   }
 }
 
 .page-header__call-me {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 
   font-family: $header-font-family;
   font-weight: $bold;
