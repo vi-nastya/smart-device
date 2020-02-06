@@ -16,9 +16,12 @@
   }
 
   @media (max-width: $tablet-max) {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-left: 190px;
+    padding-top: 26px;
+    padding-bottom: 82px;
     background-image: url("../img/year-tablet@1x.png");
+    background-position: -28px 25px;
+    background-size: 251px 362px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/year-tablet@2x.png");
@@ -42,6 +45,7 @@
   color: $text-color;
 
   @media (max-width: $tablet-max) {
+    margin-bottom: 26px;
     font-size: 32px;
     line-height: 140.62%;
   }
@@ -59,6 +63,26 @@
   font-size: 16px;
   line-height: 22px;
   color: $text-color;
+}
+
+.about__description-text {
+  &--desktop {
+    display: inline;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  @media (max-width: $tablet-max) {
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: inline;
+    }
+  }
 }
 
 .about__button {
@@ -83,6 +107,10 @@
   border-radius: 5px;
 
   cursor: pointer;
+
+  @media (max-width: $tablet-max) {
+    margin-top: 21px;
+  }
 
   &:hover,
   &:focus {
