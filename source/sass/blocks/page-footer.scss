@@ -12,12 +12,32 @@
   justify-content: space-between;
 
   padding-bottom: 60px;
+
+  @media (max-width: $tablet-max) {
+    flex-direction: column;
+  }
 }
 
 .page-footer__links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: $tablet-max) {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.page-footer__logo-wrapper {
+  @media (max-width: $mobile-max) {
+    margin-bottom: 25px;
+  }
 }
 
 .page-footer__social-list {
@@ -33,9 +53,15 @@
   display: flex;
   justify-content: space-between;
   min-width: 60%;
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column;
+  }
 }
 
 .page-footer__nav-title, .page-footer__contacts-title {
+  margin: 0;
+  margin-bottom: 28px;
   font-family: $header-font-family;
   font-weight: $normal;
   font-size: 15px;
@@ -43,11 +69,19 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  color: $main-color
+  color: $main-color;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 35px;
+  }
 }
 
 .page-footer__nav-columns {
   display: flex;
+
+  @media (max-width: $tablet-max) {
+    flex-direction: column;
+  }
 }
 
 .page-footer__nav-list {
@@ -96,12 +130,19 @@
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .page-footer__copyright-text,
 .page-footer__copyright-years,
 .page-footer__copyright-docs,
-.page-footer__copyright-developer  {
+.page-footer__copyright-developer,
+.page-footer__top-years  {
+  margin: 0;
   font-family: $main-font-family;
   font-weight: $normal;
   font-size: 13px;
@@ -122,5 +163,30 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.page-footer__copyright-docs {
+  @media (max-width: $mobile-max) {
+    margin-bottom: 20px;
+  }
+}
+
+.page-footer__copyright-text,
+.page-footer__copyright-years {
+  @media (max-width: $tablet-max) {
+    display: none;
+  }
+}
+
+.page-footer__top-years {
+  display: none;
+
+  @media (max-width: $tablet-max) {
+    display: flex;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 30px;
   }
 }
