@@ -91,6 +91,11 @@
   fill: $accent-color;
 }
 
+.page-footer__social-link:active .page-footer__social-icon {
+  fill: $accent-color;
+  opacity: 0.3;
+}
+
 .page-footer__menu {
   display: flex;
   justify-content: space-between;
