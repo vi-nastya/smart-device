@@ -23,11 +23,25 @@
 .popup-close {
   position: absolute;
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 17px;
+  height: 17px;
   right: 20px;
   top: 20px;
-  background: red;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .popup-header {
