@@ -83,6 +83,14 @@
   cursor: pointer;
 }
 
+.page-footer__social-icon {
+  fill: $social-color;
+}
+
+.page-footer__social-link:hover .page-footer__social-icon {
+  fill: $accent-color;
+}
+
 .page-footer__menu {
   display: flex;
   justify-content: space-between;
