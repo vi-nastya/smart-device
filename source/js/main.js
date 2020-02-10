@@ -1,23 +1,51 @@
 'use strict';
 var popupOpenButton = document.querySelector('.page-header__call-me');
 var popup = document.querySelector('.popup');
+var bodyElement = document.querySelector('body');
+var closePopupButton = popup.querySelector('.popup-close');
+
+var closePopup = function () {
+  popup.classList.add('popup--closed');
+  bodyElement.classList.remove('overlay');
+
+  bodyElement.removeEventListener('click', onOverlayClick);
+  document.removeEventListener('keydown', onEscKeyDown);
+  closePopupButton.removeEventListener('click', closePopup);
+};
+
+var showPopup = function () {
+  console.log("SHOWING");
+  popup.classList.remove('popup--closed');
+  bodyElement.classList.add('overlay');
+};
+
+var onEscKeyDown = function (evt) {
+  evt.preventDefault();
+  if (evt.keyCode === 27) {
+    closePopup();
+  }
+};
+
+var onOverlayClick = function (evt) {
+  if (!popup.contains(evt.target) && evt.target !== popupOpenButton) {
+    closePopup();
+  }
+};
 
 popupOpenButton.addEventListener('click', function () {
-  popup.classList.remove('popup--closed');
+  showPopup();
 
-  var popupNameInput = popup.querySelector('.popup-form__input--name');
   // при открытии модального окна фокус в поле "Имя"
+  var popupNameInput = popup.querySelector('.popup-form__input--name');
   popupNameInput.focus();
 
-  var closePopupButton = popup.querySelector('.popup-close');
-  closePopupButton.addEventListener('click', function () {
-    popup.classList.add('popup--closed');
-  });
+  // закрытие при клике на overlay, при клике на кнопку "закрыть" и по Esc
+  bodyElement.addEventListener('click', onOverlayClick);
+  document.addEventListener('keydown', onEscKeyDown);
+  closePopupButton.addEventListener('click', closePopup);
 });
 
-// TODO: закрытие модального окна по кнопке "Х" [x],  по нажатию клавиши Esc [], по клику на overlay[].
 // TODO: значения полей "Имя", "Телефон" и "Ваше сообщение" должны храниться в localStorage
-
 
 // МАСКА ВВОДА
 var contactPhoneInput = document.getElementById('contact-phone');
@@ -40,4 +68,6 @@ modalPhoneInput.addEventListener('focus', function () {
     modalMask.value = '+7(';
   }
 });
+
+// TODO: значения полей "Имя", "Телефон" и "Ваше сообщение" должны храниться в localStorage
 
