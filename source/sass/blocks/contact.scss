@@ -145,6 +145,10 @@
 
   border: 2px solid transparent;
 
+  &::placeholder {
+    color: $background-color;
+  }
+
   @media (max-width: $tablet-max) {
     min-height: 160px;
   }

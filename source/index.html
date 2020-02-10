@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
-  <link rel="preload" href="fonts/pt-mono.woff2" as="font">
-  <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font">
-  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font">
+  <link rel="preload" href="fonts/pt-mono.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body>
@@ -131,7 +131,7 @@
             <label for="contact-name" class="visually-hidden">Имя</label>
             <input placeholder="Телефон" id="contact-phone" name="phone" required>
             <label for="contact-phone" class="visually-hidden">Телефон</label>
-            <textarea rows="6" id="contact-text" name="text" required>Ваш вопрос</textarea>
+            <textarea rows="6" id="contact-text" name="text" placeholder="Ваш вопрос" required></textarea>
             <label for="contact-text" class="visually-hidden">Ваш вопрос</label>
             <button class="contact-form__button" type="submit">Задать вопрос</button>
             <input class="visually-hidden" type="checkbox" id="contact-personal-data" name="personal-data" checked></inbox>

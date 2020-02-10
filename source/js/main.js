@@ -14,13 +14,11 @@ var closePopup = function () {
 };
 
 var showPopup = function () {
-  console.log("SHOWING");
   popup.classList.remove('popup--closed');
   bodyElement.classList.add('overlay');
 };
 
 var onEscKeyDown = function (evt) {
-  evt.preventDefault();
   if (evt.keyCode === 27) {
     closePopup();
   }
@@ -62,10 +60,22 @@ contactPhoneInput.addEventListener('focus', function () {
   }
 });
 
+contactPhoneInput.addEventListener('blur', function () {
+  if (contactMask.value === '+7(') {
+    contactMask.value = '';
+  }
+});
+
 var modalMask = IMask(modalPhoneInput, maskOptions);
 modalPhoneInput.addEventListener('focus', function () {
   if (modalMask.value === '') {
     modalMask.value = '+7(';
+  }
+});
+
+modalPhoneInput.addEventListener('blur', function () {
+  if (modalMask.value === '+7(') {
+    modalMask.value = '';
   }
 });
 
