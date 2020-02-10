@@ -35,7 +35,7 @@
   }
 }
 
-.about__header {
+.about h2 {
   margin: 0;
   margin-bottom: 20px;
   font-family: $header-font-family;
@@ -55,7 +55,7 @@
   }
 }
 
-.about__description {
+.about p {
   margin: 0;
   margin-bottom: 20px;
   font-family: $main-font-family;
@@ -65,21 +65,17 @@
   color: $text-color;
 }
 
-.about__description-text {
-  &--desktop {
-    display: inline;
-  }
-
-  &--tablet {
+.about span {
+  &:last-of-type {
     display: none;
   }
 
   @media (max-width: $tablet-max) {
-    &--desktop {
+    &:first-of-type {
       display: none;
     }
 
-    &--tablet {
+    &:last-of-type {
       display: inline;
     }
   }
