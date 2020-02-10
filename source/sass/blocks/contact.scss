@@ -5,13 +5,13 @@
   color: $background-color;
   background-color: $accent-color;
 
-  background-image: url("../img/airplane-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-position: 343px 160px;
+  background-image: url("../img/airplane-desktop@1x.png"), url("../img/contacts-left-triangles-desktop@1x.png"), url("../img/contacts-right-triangles-desktop@1x.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 343px 160px, left, right;
   background-size: 511px 288px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/airplane-desktop@2x.png");
+    background-image: url("../img/airplane-desktop@2x.png"), url("../img/contacts-left-triangles-desktop@2x.png"), url("../img/contacts-right-triangles-desktop@2x.png");
   }
 
   @media (max-width: $tablet-max) {
@@ -127,7 +127,7 @@
 .contact-form textarea {
   width: 100%;
   min-height: 154px;
-  padding-top: 15px;
+  padding-top: 10px;
   resize: none;
 
   margin-bottom: 40px;
