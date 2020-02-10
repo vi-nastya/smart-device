@@ -141,6 +141,10 @@
   @media (max-width: $tablet-max) {
     flex-direction: column;
   }
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+  }
 }
 
 .page-footer__nav-list {
