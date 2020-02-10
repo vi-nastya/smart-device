@@ -39,7 +39,7 @@
     max-width: calc((100% - 30px) / 2);
     padding-left: 23px;
     padding-right: 20px;
-    padding-top: 65px;
+    padding-top: 22px;
     padding-bottom: 19px;
 
     &:nth-of-type(3),
@@ -64,6 +64,10 @@
 .features-item__icon {
   margin-bottom: 20px;
   fill: $accent-color;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 11px;
+  }
 }
 
 .features-item:hover .features-item__icon {
