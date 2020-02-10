@@ -83,18 +83,39 @@ modalPhoneInput.addEventListener('blur', function () {
 
 
 // ACCORDION
-var navButton = document.querySelector('.');
-var contactsButton = document.querySelector('.');
-var navList = document.querySelector('.');
-var contactsList = document.querySelector('.');
+var navButton = document.querySelectorAll('.accordion-btn')[0];
+var contactsButton = document.querySelectorAll('.accordion-btn')[1];
+var navList = document.querySelector('.page-footer__nav-columns');
+var contactsList = document.querySelector('.page-footer__contacts-list');
+
+var sections = [{
+  button: navButton,
+  content: navList
+}, {
+  button: contactsButton,
+  content: contactsList
+}];
 
 var hideSections = function () {
+  sections.forEach(function (section) {
+    section.button.classList.remove('accordion-btn--close');
+    section.content.classList.add('accordion-hide');
+  });
+};
+
+var showSection = function (section) {
   // todo
 };
 
-var openSection = function (section) {
-  // todo
-};
+sections.forEach(function (section) {
+  section.button.addEventListener('click', function () {
+    var isSectionShown = section.button.classList.contains('accordion-btn--close');
+    hideSections();
 
-// was closed? close others, open this
-// was opened? close this
+    // if current section was closed, show it
+    if (!isSectionShown) {
+      section.button.classList.add('accordion-btn--close');
+      section.content.classList.remove('accordion-hide');
+    }
+  });
+});

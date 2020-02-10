@@ -1,0 +1,60 @@
+.accordion-hide {
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.accordion-btn {
+  display: none;
+
+  @media (max-width: $mobile-max) {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    width: 16px;
+    height: 16px;
+    padding-left: 15px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 1px;
+      top: 7px;
+      right: 5px;
+      background-color: #c4c4c4;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 16px;
+      top: 0;
+      right: 12px;
+      background-color: #c4c4c4;
+    }
+
+    &--close {
+      &::after {
+        display: none;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      &::before, &::after {
+        background-color: $main-color;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
