@@ -69,7 +69,7 @@
   fill: $background-color;
 }
 
-.features-item__title {
+.features-item h3 {
   margin: 0;
   margin-bottom: 15px;
   font-family: $header-font-family;
@@ -88,7 +88,7 @@
   }
 }
 
-.features-item__description {
+.features-item p {
   margin: 0;
   font-family: $main-font-family;
   font-weight: $normal;
