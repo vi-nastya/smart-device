@@ -124,15 +124,18 @@
       <div class="contact-inner">
         <div class="contact_content-wrapper">
           <h2 class="visually-hidden">Запись на бесплатную консультацию</h2>
-          <p class="contact__description">Остались вопросы? Задайте их нам!</p>
-          <p class="contact__details">Мы проконсультируем Вас бесплатно</p>
+          <p>Остались вопросы? Задайте их нам!</p>
+          <p>Мы проконсультируем Вас бесплатно</p>
           <form class="contact-form">
-            <input class="contact-form__input" placeholder="Имя" id="contact-name">
-            <input class="contact-form__input" placeholder="Телефон" id="contact-phone">
-            <textarea class="contact-form__input contact-form__input--textarea" rows="6" id="contact-text">Ваш вопрос</textarea>
+            <input placeholder="Имя" id="contact-name" name="name" required>
+            <label for="contact-name" class="visually-hidden">Имя</label>
+            <input placeholder="Телефон" id="contact-phone" name="phone" required>
+            <label for="contact-phone" class="visually-hidden">Телефон</label>
+            <textarea rows="6" id="contact-text" name="text" required>Ваш вопрос</textarea>
+            <label for="contact-text" class="visually-hidden">Ваш вопрос</label>
             <button class="contact-form__button" type="submit">Задать вопрос</button>
-            <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data" checked></inbox>
-            <label for="personal-data" class="contact-form__label">Я согласен на обработку персональных данных</label>
+            <input class="visually-hidden" type="checkbox" id="contact-personal-data" name="personal-data" checked></inbox>
+            <label for="contact-personal-data" class="contact-form__label">Я согласен на обработку персональных данных</label>
           </form>
         </div>
       </div>

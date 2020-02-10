@@ -47,7 +47,7 @@
   }
 }
 
-.contact__description {
+.contact p:first-of-type {
   margin: 0;
   margin-bottom: 9px;
   font-family: $header-font-family;
@@ -66,7 +66,7 @@
   }
 }
 
-.contact__details {
+.contact p:last-of-type {
   margin: 0;
   margin-bottom: 51px;
   font-family: $main-font-family;
@@ -87,10 +87,7 @@
   justify-content: space-between;
 }
 
-.contact-form__input {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: $background-color;
-
+.contact-form input {
   width: calc((100% - 30px) / 2);
   min-height: 50px;
   margin-bottom: 40px;
@@ -103,21 +100,13 @@
   font-size: 16px;
   line-height: 22px;
 
-  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $background-color;
+
+  border: 2px solid transparent;
 
   &::placeholder {
     color: $background-color;
-  }
-
-  &--textarea {
-    width: 100%;
-    min-height: 154px;
-    padding-top: 15px;
-    resize: none;
-
-    @media (max-width: $tablet-max) {
-      min-height: 160px;
-    }
   }
 
   &:focus {
@@ -132,6 +121,37 @@
   @media (max-width: $mobile-max) {
     width: 100%;
     margin-bottom: 30px;
+  }
+}
+
+.contact-form textarea {
+  width: 100%;
+  min-height: 154px;
+  padding-top: 15px;
+  resize: none;
+
+  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+
+  font-family: $main-font-family;
+  font-weight: $normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $background-color;
+
+  border: 2px solid transparent;
+
+  @media (max-width: $tablet-max) {
+    min-height: 160px;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $background-color;
   }
 }
 
