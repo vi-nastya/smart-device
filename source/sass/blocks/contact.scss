@@ -21,8 +21,8 @@
   }
 
   @media (max-width: $mobile-max) {
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 31px;
+    padding-bottom: 42px;
   }
 }
 
@@ -62,7 +62,9 @@
   }
 
   @media (max-width: $mobile-max) {
+    margin-bottom: 13px;
     font-size: 28px;
+    line-height: 39px;
   }
 }
 
@@ -77,6 +79,10 @@
 
   @media (max-width: $tablet-max) {
     margin-bottom: 54px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 26px;
   }
 }
 
@@ -121,6 +127,7 @@
   @media (max-width: $mobile-max) {
     width: 100%;
     margin-bottom: 30px;
+    min-height: 52px;
   }
 }
 
@@ -152,6 +159,12 @@
   @media (max-width: $tablet-max) {
     min-height: 160px;
   }
+
+  @media (max-width: $mobile-max) {
+    min-height: 104px;
+    margin-bottom: 29px;
+  }
+
 
   &:focus {
     outline: none;
@@ -185,6 +198,12 @@
 
   @media (max-width: $tablet-max) {
     width: 283px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+    margin-bottom: 19px;
   }
 
   &:hover,
@@ -195,18 +214,9 @@
   &:active {
     opacity: 0.3;
   }
-
-  @media (max-width: $tablet-max) {
-    margin-bottom: 0;
-  }
-
-  @media (max-width: $mobile-max) {
-    width: 100%;
-    margin-bottom: 25px;
-  }
 }
 
-.contact-form__label {
+.contact-form input[type="checkbox"] ~ label {
   position: relative;
   padding-left: 40px;
   padding-top: 11px;
@@ -227,6 +237,11 @@
     width: calc(100% - 285px - 30px);
   }
 
+  @media (max-width: $mobile-max) {
+    width: 100%;
+    padding-left: 35px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -235,10 +250,10 @@
     border: 1px solid $background-color;
     top: 13px;
     left: 8px;
-  }
 
-  @media (max-width: $mobile-max) {
-    width: 100%;
+    @media (max-width: $mobile-max) {
+      left: 0;
+    }
   }
 
   &:hover,
@@ -260,4 +275,8 @@ input[type="checkbox"]:checked + .contact-form__label::after {
   height: 5px;
   background-image: url("../img/icon-checkmark.svg");
   background-repeat: no-repeat;
+
+  @media (max-width: $mobile-max) {
+    left: 4px;
+  }
 }

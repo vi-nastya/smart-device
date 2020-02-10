@@ -11,6 +11,11 @@
     padding-top: 93px;
     padding-bottom: 70px;
   }
+
+  @media (max-width: $mobile-max) {
+    padding-top: 208px;
+    padding-bottom: 40px;
+  }
 }
 
 .intro h2 {
@@ -36,6 +41,8 @@
   }
 
   @media (max-width: $mobile-max) {
+    margin-left: 0;
+
     font-size: 40px;
     line-height: 47px;
   }
@@ -62,7 +69,7 @@
   }
 
   @media (max-width: $mobile-max) {
-    padding-left: 30px;
+    padding-left: 51px;
     width: 100%;
     font-size: 16px;
     line-height: 25px;
@@ -82,8 +89,9 @@
     }
 
     @media (max-width: $mobile-max) {
-      width: 35px;
-      left: 5px;
+      width: 33px;
+      top: 14px;
+      left: 3px;
     }
   }
 }
@@ -120,6 +128,7 @@
 
   @media (max-width: $mobile-max) {
     margin-left: 0;
+    margin-top: 39px;
     width: 100%;
   }
 
@@ -130,6 +139,22 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.intro__button-text {
+  &--mobile {
+    display: none;
+  }
+
+  @media (max-width: $mobile-max) {
+    &--mobile {
+      display: inline;
+    }
+
+    &--tablet {
+      display: none;
+    }
   }
 }
 
