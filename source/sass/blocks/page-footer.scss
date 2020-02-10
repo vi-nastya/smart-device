@@ -106,6 +106,16 @@
   }
 }
 
+.page-footer__contacts,
+.page-footer__nav {
+  @media (max-width: $mobile-max) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
 .page-footer__nav-title,
 .page-footer__contacts-title {
   margin: 0;
@@ -121,6 +131,57 @@
 
   @media (max-width: $mobile-max) {
     margin-bottom: 35px;
+    margin-top: 27px;
+  }
+}
+
+/* accordion buttons */
+.page-footer__nav-button,
+.page-footer__contacts-button {
+  display: none;
+
+  @media (max-width: $mobile-max) {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    width: 16px;
+    height: 16px;
+    padding-left: 15px;
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 1px;
+      top: 7px;
+      right: 5px;
+      background-color: #c4c4c4;
+    }
+
+    &--active::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 16px;
+      top: 0;
+      right: 12px;
+      background-color: #c4c4c4;
+    }
+
+    &:hover,
+    &:focus {
+      &::before, &::after {
+        background-color: $main-color;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -143,7 +204,7 @@
   }
 }
 
-.page-footer__nav-link {
+.page-footer__nav-item a {
   font-family: $main-font-family;
   font-weight: $normal;
   font-size: 15px;
@@ -249,6 +310,10 @@
 
   @media (max-width: $tablet-max) {
     padding-right: 5px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-left: 0;
   }
 
   &:hover,

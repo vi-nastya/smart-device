@@ -266,7 +266,7 @@
   }
 }
 
-input[type="checkbox"]:checked + .contact-form__label::after {
+.contact-form input[type="checkbox"]:checked + label::after {
   position: absolute;
   content: "";
   top: 17px;

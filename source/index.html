@@ -187,36 +187,24 @@
           <h2 class="visually-hidden">Ссылки</h2>
           <section class="page-footer__nav">
             <h3 class="page-footer__nav-title">Разделы сайта</h3>
+            <button type="button" class="page-footer__nav-button" aria-label="Скрыть/показать разделы"></button>
             <div class="page-footer__nav-columns">
               <ul class="page-footer__nav-list">
-                <li class="page-footer__nav-item">
-                  <a href="#" class="page-footer__nav-link">О компании</a>
-                </li>
-                <li class="page-footer__nav-item">
-                  <a href="#" class="page-footer__nav-link">Продукты</a>
-                </li>
-                <li class="page-footer__nav-item">
-                  <a href="#" class="page-footer__nav-link">Производство печатных плат</a>
-                </li>
-                <li class="page-footer__nav-item">
-                  <a href="#" class="page-footer__nav-link">Монтаж печатных плат</a>
-                </li>
+                <li class="page-footer__nav-item"><a href="#">О компании</a></li>
+                <li class="page-footer__nav-item"><a href="#">Продукты</a></li>
+                <li class="page-footer__nav-item"><a href="#">Производство печатных плат</a></li>
+                <li class="page-footer__nav-item"><a href="#">Монтаж печатных плат</a></li>
               </ul>
               <ul class="page-footer__nav-list">
-                <li class="page-footer__nav-item">
-                  <a href="#" class="page-footer__nav-link">Комплектующие</a>
-                </li>
-                <li class="page-footer__nav-item">
-                  <a href="#" class="page-footer__nav-link">Доставка</a>
-                </li>
-                <li class="page-footer__nav-item">
-                  <a href="#" class="page-footer__nav-link">Контакты</a>
-                </li>
+                <li class="page-footer__nav-item"><a href="#">Комплектующие</a></li>
+                <li class="page-footer__nav-item"><a href="#">Доставка</a></li>
+                <li class="page-footer__nav-item"><a href="#">Контакты</a></li>
               </ul>
             </div>
           </section>
           <section class="page-footer__contacts">
             <h3 class="page-footer__contacts-title">Наш офис</h3>
+            <button type="button" class="page-footer__contacts-button page-footer__contacts-button--active" aria-label="Скрыть/показать контакты"></button>
             <ul class="page-footer__contacts-list">
               <li class="page-footer__contacts-item">г. Мытищи, Олимпийский проспект, д.10</li>
               <li class="page-footer__contacts-item"><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
@@ -236,16 +224,19 @@
   </footer>
 
   <section class="popup popup--closed">
-    <h2 class="popup-header">Закажите звонок</h2>
+    <h2>Закажите звонок</h2>
     <button type="button" class="popup-close" aria-label="Закрыть форму"></button>
-    <p class="popup-description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="popup-form">
-      <input class="popup-form__input popup-form__input--name" placeholder="Имя" id="modal-name">
-      <input class="popup-form__input popup-form__input--phone" placeholder="Телефон" id="modal-phone">
-      <textarea class="popup-form__input popup-form__input--textarea" rows="6" id="modal-text">Ваш вопрос</textarea>
+      <input placeholder="Имя" id="modal-name" name="name" required>
+      <label for="modal-name" class="visually-hidden">Имя</label>
+      <input placeholder="Телефон" id="modal-phone" name="phone" required>
+      <label for="modal-phone" class="visually-hidden">Телефон</label>
+      <textarea rows="6" id="modal-text" name="text">Ваш вопрос</textarea>
+      <label for="modal-text" class="visually-hidden">Ваш вопрос</label>
       <button class="popup-form__button" type="submit">Отправить</button>
       <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data" checked>
-      <label for="personal-data" class="popup-form__label">Я согласен на обработку персональных данных</label>
+      <label for="personal-data">Я согласен на обработку персональных данных</label>
     </form>
   </section>
 

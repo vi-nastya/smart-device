@@ -34,7 +34,7 @@ popupOpenButton.addEventListener('click', function () {
   showPopup();
 
   // при открытии модального окна фокус в поле "Имя"
-  var popupNameInput = popup.querySelector('.popup-form__input--name');
+  var popupNameInput = popup.querySelectorAll('.popup-form input')[0];
   popupNameInput.focus();
 
   // закрытие при клике на overlay, при клике на кнопку "закрыть" и по Esc
@@ -81,3 +81,20 @@ modalPhoneInput.addEventListener('blur', function () {
 
 // TODO: значения полей "Имя", "Телефон" и "Ваше сообщение" должны храниться в localStorage
 
+
+// ACCORDION
+var navButton = document.querySelector('.');
+var contactsButton = document.querySelector('.');
+var navList = document.querySelector('.');
+var contactsList = document.querySelector('.');
+
+var hideSections = function () {
+  // todo
+};
+
+var openSection = function (section) {
+  // todo
+};
+
+// was closed? close others, open this
+// was opened? close this
