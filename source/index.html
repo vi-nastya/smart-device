@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -124,9 +124,9 @@
           <p class="contact__description">Остались вопросы? Задайте их нам!</p>
           <p class="contact__details">Мы проконсультируем Вас бесплатно</p>
           <form class="contact-form">
-            <input class="contact-form__input" placeholder="Имя">
-            <input class="contact-form__input" placeholder="Телефон">
-            <textarea class="contact-form__input contact-form__input--textarea" rows="6">Ваш вопрос</textarea>
+            <input class="contact-form__input" placeholder="Имя" id="contact-name">
+            <input class="contact-form__input" placeholder="Телефон" id="contact-phone">
+            <textarea class="contact-form__input contact-form__input--textarea" rows="6" id="contact-text">Ваш вопрос</textarea>
             <button class="contact-form__button" type="submit">Задать вопрос</button>
             <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data" checked></inbox>
             <label for="personal-data" class="contact-form__label">Я согласен на обработку персональных данных</label>
@@ -226,15 +226,16 @@
     <button type="button" class="popup-close" aria-label="Закрыть форму"></button>
     <p class="popup-description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="popup-form">
-      <input class="popup-form__input popup-form__input--name" placeholder="Имя">
-      <input class="popup-form__input popup-form__input--phone" placeholder="Телефон">
-      <textarea class="popup-form__input popup-form__input--textarea" rows="6">Ваш вопрос</textarea>
+      <input class="popup-form__input popup-form__input--name" placeholder="Имя" id="modal-name">
+      <input class="popup-form__input popup-form__input--phone" placeholder="Телефон" id="modal-phone">
+      <textarea class="popup-form__input popup-form__input--textarea" rows="6" id="modal-text">Ваш вопрос</textarea>
       <button class="popup-form__button" type="submit">Отправить</button>
       <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data" checked></inbox>
       <label for="personal-data" class="popup-form__label">Я согласен на обработку персональных данных</label>
     </form>
   </section>
 
-  <script src="js/popup.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
