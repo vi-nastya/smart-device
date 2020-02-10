@@ -15,7 +15,7 @@
   @include container;
 }
 
-.services__description {
+.services p {
   margin: 0;
   margin-bottom: 51px;
   font-family: $header-font-family;
@@ -29,7 +29,7 @@
   }
 }
 
-.services-list {
+.services__list {
   @include reset-list;
 
   display: flex;
@@ -40,7 +40,7 @@
   }
 }
 
-.services-item {
+.services__item {
   display: flex;
   max-width: 370px;
   width: calc((100% - 60px) / 3);
@@ -51,7 +51,7 @@
   }
 }
 
-.services-item__link {
+.services__item-link {
   position: relative;
   max-width: 370px;
   width: 100%;
@@ -131,7 +131,7 @@
   }
 }
 
-.services-item__link::before {
+.services__item-link::before {
   position: absolute;
   content: "";
   width: 63px;
@@ -145,7 +145,7 @@
   background-position: center;
 }
 
-.services-item__title {
+.services__item h3 {
   margin: 0;
   margin-top: 50px;
   margin-left: 43px;
