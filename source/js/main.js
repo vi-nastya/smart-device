@@ -1,8 +1,80 @@
 'use strict';
+
+var userName = '';
+var phone = '';
+var text = '';
+
+var nameInputContact = document.querySelectorAll('.contact-form input')[0];
+var phoneInputContact = document.querySelectorAll('.contact-form input')[1];
+var textInputContact = document.querySelector('.contact-form textarea');
+
+var nameInputPopup = document.querySelectorAll('.popup-form input')[0];
+var phoneInputPopup = document.querySelectorAll('.popup-form input')[1];
+var textInputPopup = document.querySelector('.popup-form textarea');
+
+var getStoredValues = function () {
+  userName = localStorage.getItem('userName') || '';
+  phone = localStorage.getItem('phone') || '';
+  text = localStorage.getItem('text') || '';
+};
+
+var setValues = function () {
+  localStorage.setItem('userName', userName);
+  localStorage.setItem('phone', phone);
+  localStorage.setItem('text', text);
+};
+
+var updateContactFormValues = function () {
+  if (userName) {
+    nameInputContact.value = userName;
+  }
+
+  if (phone) {
+    phoneInputContact.value = phone;
+  }
+
+  if (text) {
+    textInputContact.value = text;
+  }
+};
+
+var updatePopupValues = function () {
+  if (userName) {
+    nameInputPopup.value = userName;
+  }
+
+  if (phone) {
+    phoneInputPopup.value = phone;
+  }
+
+  if (text) {
+    textInputPopup.value = text;
+  }
+};
+
+var onFormSubmit = function (formElement) {
+  userName = formElement.querySelectorAll('input')[0].value;
+  phone = formElement.querySelectorAll('input')[1].value;
+  text = formElement.querySelector('textarea').value;
+
+  setValues();
+};
+
+getStoredValues();
+updateContactFormValues();
+
 var popupOpenButton = document.querySelector('.page-header__call-me');
 var popup = document.querySelector('.popup');
 var bodyElement = document.querySelector('body');
 var closePopupButton = popup.querySelector('.popup-close');
+var popupSubmitButton = popup.querySelector('.popup-form__button');
+
+var contactForm = document.querySelector('.contact-form');
+var formSubmitButton = document.querySelector('.contact-form__button');
+
+formSubmitButton.addEventListener('click', function () {
+  onFormSubmit(contactForm);
+});
 
 var closePopup = function () {
   popup.classList.add('popup--closed');
@@ -14,6 +86,7 @@ var closePopup = function () {
 };
 
 var showPopup = function () {
+  updatePopupValues();
   popup.classList.remove('popup--closed');
   bodyElement.classList.add('overlay');
 };
@@ -41,6 +114,9 @@ popupOpenButton.addEventListener('click', function () {
   bodyElement.addEventListener('click', onOverlayClick);
   document.addEventListener('keydown', onEscKeyDown);
   closePopupButton.addEventListener('click', closePopup);
+  popupSubmitButton.addEventListener('click', function () {
+    onFormSubmit(popup);
+  });
 });
 
 // TODO: значения полей "Имя", "Телефон" и "Ваше сообщение" должны храниться в localStorage
