@@ -58,9 +58,10 @@
   }
 }
 
-.services__item-link {
+.services__item a {
   position: relative;
   max-width: 370px;
+  padding: 20px;
   width: 100%;
   min-height: 620px;
 
@@ -80,6 +81,20 @@
 
   cursor: pointer;
 
+  &::before {
+    position: absolute;
+    content: "";
+    width: 63px;
+    height: 63px;
+    background-color: $accent-color;
+    bottom: 0;
+    right: 0;
+
+    background-image: url("../img/icon-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -88,25 +103,27 @@
   &:active {
     opacity: 0.3;
   }
+}
 
-  &--production {
-    background-image: url("../img/service/service-production-desktop@1x.png");
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/service/service-production-desktop@2x.png");
-    }
+.services__item--production a {
+  background-image: url("../img/service/service-production-desktop@1x.png");
 
-    @media (max-width: $tablet-max) {
-      background-image: url("../img/service/service-production-tablet@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/service/service-production-tablet@2x.png");
-      }
-    }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/service/service-production-desktop@2x.png");
   }
 
-  &--install {
-    background-image: url("../img/service/service-install-desktop@1x.png");
+  @media (max-width: $tablet-max) {
+    background-image: url("../img/service/service-production-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service/service-production-tablet@2x.png");
+    }
+  }
+}
+
+.services__item--install a {
+  background-image: url("../img/service/service-install-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/service/service-install-desktop@2x.png");
@@ -119,10 +136,10 @@
         background-image: url("../img/service/service-install-tablet@2x.png");
       }
     }
-  }
+}
 
-  &--light {
-    background-image: url("../img/service/service-light-desktop@1x.png");
+.services__item--light a {
+  background-image: url("../img/service/service-light-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/service/service-light-desktop@2x.png");
@@ -135,41 +152,42 @@
         background-image: url("../img/service/service-light-tablet@2x.png");
       }
     }
-  }
-}
-
-.services__item-link::before {
-  position: absolute;
-  content: "";
-  width: 63px;
-  height: 63px;
-  background-color: $accent-color;
-  bottom: 0;
-  right: 0;
-
-  background-image: url("../img/icon-arrow-right.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .services__item h3 {
   margin: 0;
-  margin-top: 50px;
-  margin-left: 43px;
-  width: 150px;
+  margin-top: 30px;
+  margin-left: 23px;
+  max-width: 150px;
   font-family: $header-font-family;
   font-weight: $normal;
   font-size: 20px;
   line-height: 30px;
 
+  max-height: 30%;
+  overflow: hidden;
+
   color: $background-color;
 
   @media (max-width: $tablet-max) {
-    margin-top: 40px;
+    margin-top: 20px;
+    max-height: 150px;
+    max-width: 70%
   }
 
   @media (max-width: $mobile-max) {
-    margin-left: 34px;
-    margin-top: 20px;
+    margin-left: 17px;
+    margin-top: 0;
+  }
+}
+
+.services__item--light h3 {
+
+  @media (max-width: $tablet-max) {
+    margin-top: 30px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-top: 10px;
   }
 }
