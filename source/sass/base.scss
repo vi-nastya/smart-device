@@ -1,19 +1,19 @@
 @font-face {
-  font-family: "RobotoCondensed";
+  font-family: "robotocondensed";
   font-weight: $normal;
   src: url("../fonts/roboto-condensed-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-regular.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "RobotoCondensed";
+  font-family: "robotocondensed";
   font-weight: $bold;
   src: url("../fonts/roboto-condensed-700.woff2") format("woff2"), url("../fonts/roboto-condensed-700.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PTMono";
+  font-family: "ptmono";
   font-weight: $normal;
   src: url("../fonts/pt-mono.woff2") format("woff2"), url("../fonts/pt-mono.woff") format("woff");
   font-display: swap;
@@ -21,7 +21,6 @@
 
 .visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -43,7 +42,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 5;
   }
 }

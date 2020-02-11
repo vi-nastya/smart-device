@@ -12,7 +12,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/contact/airplane-desktop@2x.png"), url("../img/contact/contact-triangles-desktop@2x.png");
-    background-size: 26.5%, 1745px 765px;
+    background-size: 511px 288px, 1745px 765px;
   }
 
   @media (max-width: $tablet-max) {
@@ -267,7 +267,7 @@
 
   &:hover,
   &:focus {
-    opacity: 1.0;
+    opacity: 1;
   }
 
   &:active {

@@ -121,7 +121,7 @@
 
   overflow: hidden;
 
-  border: 2px solid transparent;;
+  border: 2px solid transparent;
 
   &::placeholder {
     color: $background-color;
@@ -205,7 +205,7 @@
 
   &:hover,
   &:focus {
-    opacity: 1.0;
+    opacity: 1;
   }
 
   &:active {
@@ -223,4 +223,3 @@
   background-image: url("../img/icon-checkmark.svg");
   background-repeat: no-repeat;
 }
-

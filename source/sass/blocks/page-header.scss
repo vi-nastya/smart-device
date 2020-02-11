@@ -125,12 +125,12 @@
   }
 }
 
-.page-header__contacts-item--email a{
+.page-header__contacts-item--email a {
   margin-right: 87px;
 
-    @media (max-width: $tablet-max) {
-      margin-right: 20px;
-    }
+  @media (max-width: $tablet-max) {
+    margin-right: 20px;
+  }
 
   &::before {
     background-image: url("../img/icon-mail.svg");
@@ -153,7 +153,7 @@
   }
 }
 
-.page-header__contacts-item--phone a{
+.page-header__contacts-item--phone a {
   &::before {
     background-image: url("../img/icon-phone.svg");
     background-size: 18px 18px;

@@ -48,7 +48,8 @@
 
     &:hover,
     &:focus {
-      &::before, &::after {
+      &::before,
+      &::after {
         background-color: $main-color;
       }
     }
