@@ -187,6 +187,10 @@
   @media (max-width: $tablet-max) {
     padding-right: 16px;
   }
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+  }
 }
 
 .page-footer__contacts-item {

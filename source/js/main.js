@@ -82,7 +82,7 @@ modalPhoneInput.addEventListener('blur', function () {
 // TODO: значения полей "Имя", "Телефон" и "Ваше сообщение" должны храниться в localStorage
 
 
-// ACCORDION
+// АККОРДЕОН
 var navButton = document.querySelectorAll('.accordion-btn')[0];
 var contactsButton = document.querySelectorAll('.accordion-btn')[1];
 var navList = document.querySelector('.page-footer__nav-columns');
@@ -103,10 +103,6 @@ var hideSections = function () {
   });
 };
 
-var showSection = function (section) {
-  // todo
-};
-
 sections.forEach(function (section) {
   section.button.addEventListener('click', function () {
     var isSectionShown = section.button.classList.contains('accordion-btn--close');
@@ -119,3 +115,23 @@ sections.forEach(function (section) {
     }
   });
 });
+
+// ПЛАВНЫЙ СКРОЛЛ
+var contactLink = document.querySelector('.intro__button');
+var featuresLink = document.querySelector('.intro__features-link');
+var contactSection = document.querySelector('#contact');
+var featuresSection = document.querySelector('#features');
+
+if (featuresLink && featuresSection) {
+  featuresLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    featuresSection.scrollIntoView({behavior: 'smooth'});
+  });
+}
+
+if (contactLink && contactSection) {
+  contactLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    contactSection.scrollIntoView({behavior: 'smooth'});
+  });
+}

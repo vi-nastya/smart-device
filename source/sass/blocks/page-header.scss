@@ -4,13 +4,13 @@
 
   color: $background-color;
   background-color: $main-color;
-  background-image: url("../img/header-bg-desktop@1x.png"), url("../img/header-triangles-desktop@1x.png"), url("../img/intro-desktop@1x.png");
-  background-size: cover, cover, 705px 515px;
+  background-image: url("../img/header-bg-desktop@1x.png"), url("../img/intro-desktop@1x.png"), url("../img/header-triangles-desktop@1x.png");
+  background-size: cover, cover, auto;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 0 0, right, 1029px 247px;
+  background-position: 0 0, 80% 50%, 85.3% 70.9%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/header-bg-desktop@2x.png"), url("../img/header-triangles-desktop@2x.png"), url("../img/intro-desktop@2x.png");
+    background-image: url("../img/header-bg-desktop@2x.png"), url("../img/intro-desktop@2x.png"), url("../img/header-triangles-desktop@2x.png");
   }
 
   @media (max-width: $tablet-max) {
