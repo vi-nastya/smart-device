@@ -114,8 +114,8 @@ if (popup) {
     popupNameInput.focus();
 
     // закрытие при клике на overlay, при клике на кнопку "закрыть" и по Esc
-    bodyElement.addEventListener('click', onOverlayClick);
-    document.addEventListener('keydown', onEscKeyDown);
+    //bodyElement.addEventListener('click', onOverlayClick);
+    //document.addEventListener('keydown', onEscKeyDown);
     closePopupButton.addEventListener('click', closePopup);
     popupSubmitButton.addEventListener('click', function () {
       onFormSubmit(popup);
