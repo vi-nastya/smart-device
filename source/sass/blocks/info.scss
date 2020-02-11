@@ -1,5 +1,33 @@
 .info {
-  @include container;
-
   background-color: $background-color;
+  background-image: url("../img/info-triangles-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/info-triangles-desktop@1x.png");
+    background-size: 1920px 1260px;
+  }
+
+  @media (max-width: $tablet-max) {
+    background-image: url("../img/info-triangles-tablet@1x.png");
+    background-size: auto;
+    background-position: 100% 38%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/info-triangles-tablet@1x.png");
+      background-size: 550px 890px;
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    background-image: url("../img/info-triangles-mobile@1x.png");
+    background-size: auto;
+    background-position: 50% 71%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/info-triangles-mobile@1x.png");
+      background-size: 320px 890px;
+    }
+  }
 }

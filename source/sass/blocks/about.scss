@@ -1,14 +1,15 @@
 .about {
-  padding-left: 180px;
+  @include container;
+  padding-left: 205px;
   padding-top: 76px;
-  padding-bottom: 108px;
+  padding-bottom: 111px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
   background-image: url("../img/year-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: -30px 80px;
+  background-position: -8px 80px;
   background-size: 220px 317px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -16,11 +17,11 @@
   }
 
   @media (max-width: $tablet-max) {
-    padding-left: 190px;
+    padding-left: 213px;
     padding-top: 26px;
-    padding-bottom: 82px;
+    padding-bottom: 80px;
     background-image: url("../img/year-tablet@1x.png");
-    background-position: -28px 25px;
+    background-position: -2px 25px;
     background-size: 251px 362px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -31,7 +32,7 @@
   @media (max-width: $mobile-max) {
     padding-top: 40px;
     background-image: none;
-    padding-left: 0;
+    padding-left: 15px;
     padding-bottom: 63px;
   }
 }

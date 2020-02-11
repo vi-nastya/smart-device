@@ -5,7 +5,7 @@
   color: $background-color;
   background-color: $main-color;
   background-image: url("../img/header-bg-desktop@1x.png"), url("../img/intro-desktop@1x.png"), url("../img/header-triangles-desktop@1x.png");
-  background-size: cover, cover, auto;
+  background-size: cover, auto, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 0 0, 80% 50%, 85.3% 70.9%;
 
