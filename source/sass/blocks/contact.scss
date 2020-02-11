@@ -5,13 +5,14 @@
   color: $background-color;
   background-color: $accent-color;
 
-  background-image: url("../img/airplane-desktop@1x.png"), url("../img/contacts-left-triangles-desktop@1x.png"), url("../img/contacts-right-triangles-desktop@1x.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 343px 160px, left, right;
-  background-size: 511px 288px;
+  background-image: url("../img/contact/airplane-desktop@1x.png"), url("../img/contact/contact-triangles-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 355px) 160px, 100% 60%;
+  background-size: 511px 288px, auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/airplane-desktop@2x.png"), url("../img/contacts-left-triangles-desktop@2x.png"), url("../img/contacts-right-triangles-desktop@2x.png");
+    background-image: url("../img/contact/airplane-desktop@2x.png"), url("../img/contact/contact-triangles-desktop@2x.png");
+    background-size: 26.5%, 1745px 765px;
   }
 
   @media (max-width: $tablet-max) {
