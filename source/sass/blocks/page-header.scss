@@ -4,34 +4,35 @@
 
   color: $background-color;
   background-color: $main-color;
-  background-image: url("../img/header-bg-desktop@1x.png"), url("../img/intro-desktop@1x.png"), url("../img/header-triangles-desktop@1x.png");
-  background-size: cover, auto, cover;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 0 0, 80% 50%, 85.3% 70.9%;
+  background-image: url("../img/header/intro-desktop@1x.png"), url("../img/header/header-triangles-desktop@1x.png"), url("../img/header/header-bg-desktop@1x.png");
+  background-size: auto, cover, cover;
+  background-repeat: no-repeat;
+  background-position: 85% 72%, 85% 72%, 0 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/header-bg-desktop@2x.png"), url("../img/intro-desktop@2x.png"), url("../img/header-triangles-desktop@2x.png");
+    background-image: url("../img/header/intro-desktop@2x.png"), url("../img/header/header-triangles-desktop@2x.png"), url("../img/header/header-bg-desktop@2x.png");
   }
 
   @media (max-width: $tablet-max) {
     padding-top: 20px;
-    background-image: url("../img/header-bg-tablet@1x.png"), url("../img/header-triangles-tablet@1x.png"), url("../img/intro-tablet@1x.png");
-    background-size: cover, 770px 566px, 265px 340px;
-    background-position: 0 0, 0 -2px, 509px 114px;
+    background-image: url("../img/header/intro-tablet@1x.png"), url("../img/header/header-triangles-tablet@1x.png"), url("../img/header/header-bg-tablet@1x.png");
+    background-size: 265px 340px, 770px 566px, cover;
+    background-position: 100% 114px, 100% -2px, 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/header-bg-tablet@2x.png"), url("../img/header-triangles-tablet@2x.png"), url("../img/intro-tablet@2x.png");
+      background-image: url("../img/header/intro-tablet@2x.png"), url("../img/header/header-triangles-tablet@2x.png"), url("../img/header/header-bg-tablet@2x.png");
     }
   }
 
   @media (max-width: $mobile-max) {
     padding-top: 16px;
     padding-bottom: 30px;
-    background-image: url("../img/header-bg-mobile@1x.png"), url("../img/header-triangles-mobile@1x.png"), url("../img/intro-mobile@1x.png");
-    background-size: cover, cover, 301px 220px;
+    background-image: url("../img/header/intro-mobile@1x.png"), url("../img/header/header-triangles-mobile@1x.png"), url("../img/header/header-bg-mobile@1x.png");
+    background-size: 301px 220px, 320px 529px, cover;
+    background-position: 100% 90px, 100% 0, 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/header-bg-mobile@2x.png"), url("../img/header-triangles-mobile@2x.png"), url("../img/intro-mobile@2x.png");
+      background-image: url("../img/header/intro-mobile@2x.png"), url("../img/header/header-triangles-mobile@2x.png"), url("../img/header/header-bg-mobile@2x.png");
     }
   }
 }
