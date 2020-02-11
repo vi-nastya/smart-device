@@ -121,6 +121,10 @@
     border: 2px solid $background-color;
   }
 
+  &:hover {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+
   @media (max-width: $tablet-max) {
     margin-bottom: 43px;
   }
@@ -170,6 +174,10 @@
   &:focus {
     outline: none;
     border: 2px solid $background-color;
+  }
+
+  &:hover {
+    border: 2px solid rgba(255, 255, 255, 0.5);
   }
 }
 
