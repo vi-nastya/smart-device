@@ -49,8 +49,8 @@
     padding-top: 22px;
     padding-bottom: 19px;
 
-    &:nth-of-type(3),
-    &:nth-of-type(4) {
+    &--confidential,
+    &--price {
       min-height: 232px;
     }
   }
