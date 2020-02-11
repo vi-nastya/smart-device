@@ -11,6 +11,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/header/intro-desktop@2x.png"), url("../img/header/header-triangles-desktop@2x.png"), url("../img/header/header-bg-desktop@2x.png");
+    background-size: 705px 515px, cover, cover;
   }
 
   @media (max-width: $tablet-max) {
