@@ -59,13 +59,25 @@
   }
 }
 
-.page-header-logo__wrapper {
-  width: 202px;
+.page-header__logo-wrapper {
+  width: 201px;
   height: 52px;
+
+  &--mobile {
+    display: none;
+  }
 
   @media (max-width: $mobile-max) {
     width: 38px;
     height: 38px;
+
+    &--mobile {
+      display: inline;
+    }
+
+    &--tablet {
+      display: none;
+    }
   }
 }
 

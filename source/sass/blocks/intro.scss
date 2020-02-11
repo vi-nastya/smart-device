@@ -2,13 +2,13 @@
   @include wide-container;
   display: flex;
   flex-direction: column;
-  padding-top: 208px;
+  padding-top: 212px;
   padding-bottom: 183px;
 
   position: relative;
 
   @media (max-width: $tablet-max) {
-    padding-top: 93px;
+    padding-top: 97px;
     padding-bottom: 70px;
   }
 
