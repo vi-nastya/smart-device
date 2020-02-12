@@ -44,6 +44,7 @@
 
   @media (max-width: $tablet-max) {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -53,8 +54,12 @@
   width: calc((100% - 60px) / 3);
 
   @media (max-width: $tablet-max) {
+    max-width: 720px;
     width: 100%;
-    max-width: 100%;
+  }
+
+  @media (max-width: $mobile-max) {
+    max-width: 290px;
   }
 }
 
@@ -112,13 +117,24 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/services/service-production-desktop@2x.png");
+    background-size: 370px 620px;
   }
 
   @media (max-width: $tablet-max) {
     background-image: url("../img/services/service-production-tablet@1x.png");
+    background-size: 720px 256px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/services/service-production-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    background-image: url("../img/services/service-production-mobile@1x.png");
+    background-size: 290px 256px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/services/service-production-mobile@2x.png");
     }
   }
 }
@@ -128,13 +144,24 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/services/service-install-desktop@2x.png");
+    background-size: 370px 620px;
   }
 
   @media (max-width: $tablet-max) {
     background-image: url("../img/services/service-install-tablet@1x.png");
+    background-size: 720px 256px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/services/service-install-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    background-image: url("../img/services/service-install-mobile@1x.png");
+    background-size: 290px 256px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/services/service-install-mobile@2x.png");
     }
   }
 }
@@ -144,13 +171,24 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/services/service-light-desktop@2x.png");
+    background-size: 370px 620px;
   }
 
   @media (max-width: $tablet-max) {
     background-image: url("../img/services/service-light-tablet@1x.png");
+    background-size: 720px 256px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/services/service-light-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    background-image: url("../img/services/service-light-mobile@1x.png");
+    background-size: 290px 256px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/services/service-light-mobile@2x.png");
     }
   }
 }
