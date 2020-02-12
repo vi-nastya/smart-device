@@ -162,7 +162,6 @@
 
 .page-footer__contacts,
 .page-footer__nav {
-
   @media (max-width: $tablet-max) {
     width: calc(50% - 15px);
   }
@@ -328,9 +327,11 @@
 
 .page-footer__copyright-docs {
   cursor: pointer;
+  margin-right: 25px;
 
   @media (max-width: $mobile-max) {
     margin-bottom: 20px;
+    margin-right: 0;
   }
 
   &:hover,
@@ -357,14 +358,6 @@
 
   @media (max-width: $tablet-max) {
     display: none;
-  }
-}
-
-.page-footer__copyright-docs {
-  margin-right: 25px;
-
-  @media (max-width: $mobile-max) {
-    margin-right: 0;
   }
 }
 
