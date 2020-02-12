@@ -64,7 +64,7 @@ getStoredValues();
 updateContactFormValues();
 
 var contactForm = document.querySelector('.contact-form');
-var formSubmitButton = document.querySelector('.contact-form__button');
+var formSubmitButton = document.querySelector('.contact-form button[type="submit"]');
 
 if (formSubmitButton && contactForm) {
   formSubmitButton.addEventListener('click', function () {
@@ -77,7 +77,7 @@ var popup = document.querySelector('.popup');
 if (popup) {
   var bodyElement = document.querySelector('body');
   var closePopupButton = popup.querySelector('.popup-close');
-  var popupSubmitButton = popup.querySelector('.popup-form__button');
+  var popupSubmitButton = popup.querySelector('.popup-form button[type="submit"]');
 
   var closePopup = function () {
     popup.classList.add('popup--closed');
@@ -126,7 +126,7 @@ if (popup) {
 
 // МАСКА ВВОДА
 var contactPhoneInput = document.getElementById('contact-phone');
-var modalPhoneInput = document.getElementById('modal-phone');
+var popupPhoneInput = document.getElementById('popup-phone');
 
 var maskOptions = {
   mask: '+7(000)000-00-00'
@@ -147,17 +147,17 @@ if (contactPhoneInput) {
   });
 }
 
-if (modalPhoneInput) {
-  var modalMask = IMask(modalPhoneInput, maskOptions);
-  modalPhoneInput.addEventListener('focus', function () {
-    if (modalMask.value === '') {
-      modalMask.value = '+7(';
+if (popupPhoneInput) {
+  var popupMask = IMask(popupPhoneInput, maskOptions);
+  popupPhoneInput.addEventListener('focus', function () {
+    if (popupMask.value === '') {
+      popupMask.value = '+7(';
     }
   });
 
-  modalPhoneInput.addEventListener('blur', function () {
-    if (modalMask.value === '+7(') {
-      modalMask.value = '';
+  popupPhoneInput.addEventListener('blur', function () {
+    if (popupMask.value === '+7(') {
+      popupMask.value = '';
     }
   });
 }
