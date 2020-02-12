@@ -133,7 +133,7 @@
           <h2 class="visually-hidden">Запись на бесплатную консультацию</h2>
           <p>Остались вопросы? Задайте&nbsp;их&nbsp;нам!</p>
           <p>Мы проконсультируем Вас бесплатно</p>
-          <form class="contact-form">
+          <form class="contact-form form">
             <input placeholder="Имя" type="text" id="contact-name" name="name" required>
             <label for="contact-name" class="visually-hidden">Имя</label>
             <input placeholder="Телефон" type="tel" id="contact-phone" name="phone" required>
@@ -141,7 +141,7 @@
             <textarea rows="4" id="contact-text" name="text" placeholder="Ваш вопрос" required></textarea>
             <label for="contact-text" class="visually-hidden">Ваш вопрос</label>
             <button type="submit">Задать вопрос</button>
-            <div class="contact-form__personal-data">
+            <div class="form__personal-data">
               <input class="visually-hidden" type="checkbox" id="contact-personal-data" name="personal-data" checked required>
               <label for="contact-personal-data">Я согласен на обработку персональных данных</label>
             </div>
@@ -233,16 +233,18 @@
     <h2>Закажите звонок</h2>
     <button type="button" class="popup-close" aria-label="Закрыть форму"></button>
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-    <form class="popup-form">
-      <input placeholder="Имя" id="modal-name" name="name" required>
-      <label for="modal-name" class="visually-hidden">Имя</label>
-      <input placeholder="Телефон" id="modal-phone" name="phone" required>
-      <label for="modal-phone" class="visually-hidden">Телефон</label>
-      <textarea rows="4" id="modal-text" name="text">Ваш вопрос</textarea>
-      <label for="modal-text" class="visually-hidden">Ваш вопрос</label>
-      <button class="popup-form__button" type="submit">Отправить</button>
-      <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data" checked>
-      <label for="personal-data">Я согласен на обработку персональных данных</label>
+    <form class="popup-form form form--popup">
+      <input placeholder="Имя" type="text" id="popup-name" name="name" required>
+      <label for="popup-name" class="visually-hidden">Имя</label>
+      <input placeholder="Телефон" type="tel" id="popup-phone" name="phone" required>
+      <label for="popup-phone" class="visually-hidden">Телефон</label>
+      <textarea rows="4" id="popup-text" name="text" placeholder="Ваш вопрос" required></textarea>
+      <label for="popup-text" class="visually-hidden">Ваш вопрос</label>
+      <button type="submit">Задать вопрос</button>
+      <div class="form__personal-data">
+        <input class="visually-hidden" type="checkbox" id="popup-personal-data" name="personal-data" checked required>
+        <label for="popup-personal-data">Я согласен на обработку персональных данных</label>
+      </div>
     </form>
   </section>
 
