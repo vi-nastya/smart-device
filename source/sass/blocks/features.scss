@@ -34,7 +34,7 @@
   padding-top: 38px;
   padding-bottom: 40px;
 
-  color: $accent-color;
+  color: $text-color;
   border: 2px solid $border-color;
   border-left: 2px solid $accent-color;
 
@@ -73,7 +73,14 @@
   }
 
   &:hover {
+    h3 {
     color: $background-color;
+    }
+
+    p {
+      color: $background-color;
+    }
+
     background-color: $accent-color;
   }
 }
@@ -102,6 +109,7 @@
   font-weight: $normal;
   font-size: 24px;
   line-height: 34px;
+  color: $accent-color;
 
   @media (max-width: $tablet-max) {
     margin-bottom: 10px;
@@ -145,4 +153,5 @@
   font-weight: $normal;
   font-size: 16px;
   line-height: 22px;
+  color: $text-color;
 }
