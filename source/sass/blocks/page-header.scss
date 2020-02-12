@@ -7,7 +7,7 @@
   background-image: url("../img/header/intro-desktop@1x.png"), url("../img/header/header-triangles-desktop@1x.png"), url("../img/header/header-bg-desktop@1x.png");
   background-size: auto, cover, cover;
   background-repeat: no-repeat;
-  background-position: 85% 72%, 85% 72%, 0 0;
+  background-position: calc(50% + 427px) 72%, 85% 72%, 0 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/header/intro-desktop@2x.png"), url("../img/header/header-triangles-desktop@2x.png"), url("../img/header/header-bg-desktop@2x.png");
