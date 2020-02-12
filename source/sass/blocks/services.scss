@@ -1,6 +1,6 @@
 .services {
   padding-top: 90px;
-  padding-bottom: 125px;
+  padding-bottom: 80px;
 
   color: $background-color;
   background-color: $main-color;
@@ -40,11 +40,12 @@
   @include reset-list;
 
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (max-width: $tablet-max) {
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -52,14 +53,22 @@
   display: flex;
   max-width: 370px;
   width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 45px;
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
 
   @media (max-width: $tablet-max) {
     max-width: 720px;
     width: 100%;
+    margin-right: 0;
   }
 
   @media (max-width: $mobile-max) {
     max-width: 290px;
+    margin-bottom: 30px;
   }
 }
 
@@ -75,14 +84,9 @@
 
   @media (max-width: $tablet-max) {
     margin: 0 auto;
-    margin-bottom: 45px;
     max-width: 720px;
     width: 100%;
     min-height: 256px;
-  }
-
-  @media (max-width: $mobile-max) {
-    margin-bottom: 30px;
   }
 
   cursor: pointer;
