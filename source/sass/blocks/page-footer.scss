@@ -183,6 +183,7 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  align-items: flex-start;
 
   @media (max-width: $mobile-max) {
     margin-bottom: 27px;
