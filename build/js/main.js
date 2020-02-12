@@ -106,7 +106,8 @@ if (popup) {
     }
   };
 
-  popupOpenButton.addEventListener('click', function () {
+  popupOpenButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
     showPopup();
 
     // при открытии модального окна фокус в поле "Имя"
