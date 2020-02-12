@@ -94,7 +94,8 @@
   justify-content: space-between;
 }
 
-.contact-form input:not([type="checkbox"]) {
+.contact-form input[type="text"],
+.contact-form input[type="tel"] {
   width: calc((100% - 30px) / 2);
   min-height: 50px;
   margin-bottom: 40px;
@@ -181,7 +182,7 @@
   }
 }
 
-.contact-form__button {
+.contact-form button[type="submit"] {
   width: 270px;
   padding-left: 20px;
   padding-right: 20px;
@@ -225,12 +226,31 @@
   }
 }
 
-.contact-form input[type="checkbox"] ~ label {
+.contact-form__personal-data {
   position: relative;
-  padding-left: 40px;
+  display: flex;
+
   padding-top: 11px;
 
   width: calc(100% - 270px - 30px);
+
+  @media (max-width: $tablet-max) {
+    width: calc(100% - 285px - 30px);
+  }
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+  }
+}
+
+.contact-form__personal-data input[type="checkbox"] {
+  top: 30px;
+  left: 18px;
+}
+
+.contact-form input[type="checkbox"] ~ label {
+  position: relative;
+  padding-left: 40px;
 
   font-family: $main-font-family;
   font-weight: normal;
@@ -242,12 +262,7 @@
 
   cursor: pointer;
 
-  @media (max-width: $tablet-max) {
-    width: calc(100% - 285px - 30px);
-  }
-
   @media (max-width: $mobile-max) {
-    width: 100%;
     padding-left: 35px;
   }
 
@@ -257,7 +272,7 @@
     width: 16px;
     height: 16px;
     border: 1px solid $background-color;
-    top: 13px;
+    top: 2px;
     left: 8px;
 
     @media (max-width: $mobile-max) {
@@ -278,7 +293,7 @@
 .contact-form input[type="checkbox"]:checked + label::after {
   position: absolute;
   content: "";
-  top: 17px;
+  top: 6px;
   left: 12px;
   width: 8px;
   height: 5px;

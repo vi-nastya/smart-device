@@ -134,15 +134,17 @@
           <p>Остались вопросы? Задайте&nbsp;их&nbsp;нам!</p>
           <p>Мы проконсультируем Вас бесплатно</p>
           <form class="contact-form">
-            <input placeholder="Имя" id="contact-name" name="name" required="">
+            <input placeholder="Имя" type="text" id="contact-name" name="name" required="">
             <label for="contact-name" class="visually-hidden">Имя</label>
-            <input placeholder="Телефон" id="contact-phone" name="phone" required="">
+            <input placeholder="Телефон" type="tel" id="contact-phone" name="phone" required="">
             <label for="contact-phone" class="visually-hidden">Телефон</label>
             <textarea rows="4" id="contact-text" name="text" placeholder="Ваш вопрос" required=""></textarea>
             <label for="contact-text" class="visually-hidden">Ваш вопрос</label>
-            <button class="contact-form__button" type="submit">Задать вопрос</button>
-            <input class="visually-hidden" type="checkbox" id="contact-personal-data" name="personal-data" checked="">
-            <label for="contact-personal-data">Я согласен на обработку персональных данных</label>
+            <button type="submit">Задать вопрос</button>
+            <div class="contact-form__personal-data">
+              <input class="visually-hidden" type="checkbox" id="contact-personal-data" name="personal-data" checked="" required="">
+              <label for="contact-personal-data">Я согласен на обработку персональных данных</label>
+            </div>
           </form>
         </div>
       </div>
