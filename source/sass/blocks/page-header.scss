@@ -30,7 +30,7 @@
     padding-bottom: 30px;
     background-image: url("../img/header/intro-mobile@1x.png"), url("../img/header/header-triangles-mobile@1x.png"), url("../img/header/header-bg-mobile@1x.png");
     background-size: 301px 220px, 320px 529px, cover;
-    background-position: 100% 90px, 100% 0, 0 0;
+    background-position: 24px 90px, 100% 0, 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/header/intro-mobile@2x.png"), url("../img/header/header-triangles-mobile@2x.png"), url("../img/header/header-bg-mobile@2x.png");
