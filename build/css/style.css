@@ -937,19 +937,24 @@ body {
   border-radius: 0; }
   .form input[type="text"]::-webkit-input-placeholder,
   .form input[type="tel"]::-webkit-input-placeholder {
-    color: #ffffff; }
+    color: #ffffff;
+    opacity: 1; }
   .form input[type="text"]::-moz-placeholder,
   .form input[type="tel"]::-moz-placeholder {
-    color: #ffffff; }
+    color: #ffffff;
+    opacity: 1; }
   .form input[type="text"]:-ms-input-placeholder,
   .form input[type="tel"]:-ms-input-placeholder {
-    color: #ffffff; }
+    color: #ffffff;
+    opacity: 1; }
   .form input[type="text"]::-ms-input-placeholder,
   .form input[type="tel"]::-ms-input-placeholder {
-    color: #ffffff; }
+    color: #ffffff;
+    opacity: 1; }
   .form input[type="text"]::placeholder,
   .form input[type="tel"]::placeholder {
-    color: #ffffff; }
+    color: #ffffff;
+    opacity: 1; }
   .form input[type="text"]:focus,
   .form input[type="tel"]:focus {
     outline: none;
@@ -993,15 +998,20 @@ body {
   border: 2px solid transparent;
   border-radius: 0; }
   .form textarea::-webkit-input-placeholder {
-    color: #ffffff; }
+    color: #ffffff;
+    opacity: 1; }
   .form textarea::-moz-placeholder {
-    color: #ffffff; }
+    color: #ffffff;
+    opacity: 1; }
   .form textarea:-ms-input-placeholder {
-    color: #ffffff; }
+    color: #ffffff;
+    opacity: 1; }
   .form textarea::-ms-input-placeholder {
-    color: #ffffff; }
+    color: #ffffff;
+    opacity: 1; }
   .form textarea::placeholder {
-    color: #ffffff; }
+    color: #ffffff;
+    opacity: 1; }
   @media (max-width: 1023px) {
     .form textarea {
       min-height: 160px; } }

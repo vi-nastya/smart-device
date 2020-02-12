@@ -27,6 +27,7 @@
 
   &::placeholder {
     color: $background-color;
+    opacity: 1;
   }
 
   &:focus {
@@ -82,6 +83,7 @@
 
   &::placeholder {
     color: $background-color;
+    opacity: 1;
   }
 
   @media (max-width: $tablet-max) {
