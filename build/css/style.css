@@ -65,7 +65,7 @@ body {
   color: #ffffff;
   background-color: #1b2d37;
   background-image: url("../img/header/intro-desktop@1x.png"), url("../img/header/header-triangles-desktop@1x.png"), url("../img/header/header-bg-desktop@1x.png");
-  background-size: auto, cover, cover;
+  background-size: auto, auto, cover;
   background-repeat: no-repeat;
   background-position: calc(50% + 427px) 72%, 85% 72%, 0 0; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -76,18 +76,18 @@ body {
     .page-header {
       padding-top: 20px;
       background-image: url("../img/header/intro-tablet@1x.png"), url("../img/header/header-triangles-tablet@1x.png"), url("../img/header/header-bg-tablet@1x.png");
-      background-size: 265px 340px, 770px 566px, cover;
       background-position: 100% 114px, 100% -2px, 0 0; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../img/header/intro-tablet@2x.png"), url("../img/header/header-triangles-tablet@2x.png"), url("../img/header/header-bg-tablet@2x.png"); } }
+      background-image: url("../img/header/intro-tablet@2x.png"), url("../img/header/header-triangles-tablet@2x.png"), url("../img/header/header-bg-tablet@2x.png");
+      background-size: 265px 340px, 770px 566px, cover; } }
   @media (max-width: 767px) {
     .page-header {
       padding-top: 16px;
       padding-bottom: 30px;
       background-image: url("../img/header/intro-mobile@1x.png"), url("../img/header/header-triangles-mobile@1x.png"), url("../img/header/header-bg-mobile@1x.png");
       background-size: 301px 220px, 320px 529px, cover;
-      background-position: 24px 90px, 100% 0, 0 0; } }
+      background-position: 100% 90px, 100% 0, 0 0; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .page-header {
       background-image: url("../img/header/intro-mobile@2x.png"), url("../img/header/header-triangles-mobile@2x.png"), url("../img/header/header-bg-mobile@2x.png"); } }
@@ -296,6 +296,7 @@ body {
   @media (max-width: 767px) {
     .intro h2 {
       margin-left: 0;
+      width: 75%;
       font-size: 40px;
       line-height: 47px; } }
 

@@ -5,7 +5,7 @@
   color: $background-color;
   background-color: $main-color;
   background-image: url("../img/header/intro-desktop@1x.png"), url("../img/header/header-triangles-desktop@1x.png"), url("../img/header/header-bg-desktop@1x.png");
-  background-size: auto, cover, cover;
+  background-size: auto, auto, cover;
   background-repeat: no-repeat;
   background-position: calc(50% + 427px) 72%, 85% 72%, 0 0;
 
@@ -17,11 +17,11 @@
   @media (max-width: $tablet-max) {
     padding-top: 20px;
     background-image: url("../img/header/intro-tablet@1x.png"), url("../img/header/header-triangles-tablet@1x.png"), url("../img/header/header-bg-tablet@1x.png");
-    background-size: 265px 340px, 770px 566px, cover;
     background-position: 100% 114px, 100% -2px, 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/header/intro-tablet@2x.png"), url("../img/header/header-triangles-tablet@2x.png"), url("../img/header/header-bg-tablet@2x.png");
+      background-size: 265px 340px, 770px 566px, cover;
     }
   }
 
@@ -30,7 +30,7 @@
     padding-bottom: 30px;
     background-image: url("../img/header/intro-mobile@1x.png"), url("../img/header/header-triangles-mobile@1x.png"), url("../img/header/header-bg-mobile@1x.png");
     background-size: 301px 220px, 320px 529px, cover;
-    background-position: 24px 90px, 100% 0, 0 0;
+    background-position: 100% 90px, 100% 0, 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/header/intro-mobile@2x.png"), url("../img/header/header-triangles-mobile@2x.png"), url("../img/header/header-bg-mobile@2x.png");
