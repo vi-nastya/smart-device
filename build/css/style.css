@@ -1643,6 +1643,11 @@ body {
   color: #ffffff; }
   .popup--closed {
     display: none; }
+  @media (max-height: 665px) {
+    .popup {
+      top: 15px; }
+      .popup button[type="submit"] {
+        margin-bottom: 15px; } }
 
 .popup-close {
   position: absolute;
