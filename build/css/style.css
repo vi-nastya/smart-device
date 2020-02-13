@@ -1645,9 +1645,8 @@ body {
     display: none; }
   @media (max-height: 665px) {
     .popup {
-      top: 15px; }
-      .popup button[type="submit"] {
-        margin-bottom: 15px; } }
+      top: 15px;
+      overflow-y: scroll; } }
 
 .popup-close {
   position: absolute;

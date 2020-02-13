@@ -22,10 +22,7 @@
 
   @media(max-height: 665px) {
     top: 15px;
-
-    button[type="submit"] {
-      margin-bottom: 15px;
-    }
+    overflow-y: scroll;
   }
 }
 
