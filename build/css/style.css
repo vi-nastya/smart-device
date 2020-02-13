@@ -681,11 +681,7 @@ body {
 
 @media (max-width: 767px) {
   .features-item--confidential .features-item__icon {
-    margin-bottom: 8px; }
-  .features-item--confidential h3 {
-    margin-bottom: 0; }
-  .features-item--confidential p {
-    margin-top: -6px; } }
+    margin-bottom: 8px; } }
 
 @media (max-width: 767px) {
   .features-item--price .features-item__icon {
